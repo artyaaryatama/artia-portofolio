@@ -1,10 +1,19 @@
 import type { Metadata } from "next";
-import { Hubot_Sans} from "next/font/google";
+import { Space_Grotesk, Figtree} from "next/font/google";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
-const hubotSans = Hubot_Sans({
-  variable: "--font-hubot-sans",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
+  weight: ["400", "700"]
+})
+
+const figtree = Figtree({
+  variable: "--font-figtree",
+  subsets: ["latin"],
+  weight: ["500", "700"]
 })
 
 export const metadata: Metadata = {
@@ -20,10 +29,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${hubotSans.variable} antialiased`}
+        className={`${spaceGrotesk.variable} ${figtree.variable} antialiased 
+        pt-[10px]
+        bg-background
+        `}
       >
-        {children}
+        <Navbar />
+        <div className="mb-15">
+          {children}
+
+        </div>
+        <Footer />
       </body>
-    </html>
+    </html> 
   );
 }
