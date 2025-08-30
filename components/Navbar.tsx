@@ -10,46 +10,50 @@ export default function Navbar() {
 
   return (
     <nav className="
-      font-space-grotesk text-sm
-      mx-5 h-15
-      position-fixed top-0 left-0 right-0
+      fixed inset-x-0 top-0 z-50
+      bg-background/70 backdrop-filter backdrop-blur-lg w-full
+      font-space-grotesk text-sm h-[62px]
+      px-5 pt-3
       ">
 
       <ul className="
         grid grid-cols-4
-        gap-[10px]
+        gap-2.5
         has-autofill:
       ">
 
         <li className="
           text-sm
-          col-span-2
+          col-span-3
           ">
           <div className="
             font-bold leading-[14px]
             ">
             <Link href={'/'}>
-              ARTIA <span className="block">PORTOFO-</span> <span>LIO</span>
+              ARTIA <span className="block">PORTO-</span> <span>FOLIO</span>
             </Link>
 
           </div>
 
         </li>
 
-        <li className="">
+        {/* <li className="">
           <Button
             size={'nopadx'}
             variant={'outline'}
+            className="overflow-hidden 
+              text-sm
+            "
             >
-            <Link href={{ pathname: "/" }}>
-              Contact ME
-            </Link>
+              <Link href="mailto:artyaaryatama@gmail.com">
+                Contact
+              </Link>
           </Button>
-        </li>
+        </li> */}
 
         <li className="
           flex flex-col 
-          gap-1
+          gap-1 
         ">
 
           <Button

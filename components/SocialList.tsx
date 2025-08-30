@@ -1,10 +1,11 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Mail } from "lucide-react"
 
 export default function SocialList(){
   return (
-    <div className="flex gap-6 items-end justify-start">
+    <div className="
+      flex items-center gap-4
+    ">
       <Link href='/' >
         <Image 
           src={'/icons/github.svg'}
@@ -27,7 +28,11 @@ export default function SocialList(){
         />
       </Link>
       <Link href="mailto:artyaaryatama@gmail.com" >
-        <Mail  className="w-[30px] h-[30px] text-black"/>
+        <Image 
+          src={'/icons/gmail.svg'}
+          alt="Artia Audrian Aryatama | Gmail"
+          width={28} height={28}
+        />
       </Link>
     </div>
   )

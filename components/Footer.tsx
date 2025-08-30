@@ -10,19 +10,26 @@ export default function Footer() {
 
       mb-5
     ">
-      <div className="flex items-end">
-        <h3 className="
-        font-space-grotesk text-4xl
-        font-bold leading-[38px]
-        ">
-          Design Meets <span className="block">Development Here</span>
+      <div className="flex items-start">
+        <h3
+          className="
+            font-space-grotesk font-bold 
+            
+            leading-[38px] text-4xl
+          "
+        >
+          Design Meets
+          <span className="block">
+            Development Here
+            <span className="relative inline-flex size-2 ml-[10px] mt-2 align-middle">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
+              <span className="relative inline-flex size-2 rounded-full bg-sky-500"></span>
+            </span>
+          </span>
         </h3>
-
-        <span className="relative flex size-2 ml-2 mb-2">
-          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
-          <span className="relative inline-flex size-2 rounded-full bg-sky-500"></span>
-        </span>
       </div>
+
+
       
       <p className="font-figtree text-sm leading-5">
         Currently I available for new projects and collaborations. If you&apos;re looking for a frontend developer who blends design into development, let&apos;s build together!

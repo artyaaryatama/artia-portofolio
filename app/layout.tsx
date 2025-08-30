@@ -35,7 +35,7 @@ export default function RootLayout({
         `}
       >
         <Navbar />
-        <div className="mb-15">
+        <div className="mt-[62px] mb-15">
           {children}
 
         </div>

@@ -147,3 +147,17 @@ body{
     padding: 0 30px;
   }
 }
+
+.animate-marqueeBtn {
+  white-space: nowrap;
+  animation: marqueeBtn 4s linear infinite;
+}
+
+@keyframes marqueeBtn {
+0% {
+            transform: translateX(25%);
+          }
+          100% {
+            transform: translateX(0%);
+          }
+}
