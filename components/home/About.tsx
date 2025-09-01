@@ -39,7 +39,6 @@ export default function About(){
         >
           <Link
             href={'/'}
-            
             className="flex items-center gap-2"
           >
             Resume 

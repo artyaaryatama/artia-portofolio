@@ -60,13 +60,13 @@
 
   --card: oklch(1 0 0);
   --muted-foreground: oklch(0.556 0 0);
-  --card-foreground: oklch(0.145 0 0);
+  --card-foreground: #1E1E1E;
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
+  --popover-foreground: #1E1E1E;
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --secondary-foreground: #1E1E1E;
+  --accent-foreground: #1E1E1E;
   --destructive: oklch(0.577 0.245 27.325);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
@@ -76,11 +76,11 @@
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
   --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-foreground: #1E1E1E;
+  --sidebar-primary: #1E1E1E;
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-accent-foreground: #1E1E1E;
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 }
@@ -148,16 +148,9 @@ body{
   }
 }
 
-.animate-marqueeBtn {
-  white-space: nowrap;
-  animation: marqueeBtn 4s linear infinite;
-}
-
-@keyframes marqueeBtn {
-0% {
-            transform: translateX(25%);
-          }
-          100% {
-            transform: translateX(0%);
-          }
+.custom-border{
+  border-top: 4px solid var(--background); 
+  border-left: 4px solid var(--background);
+  border-right: 4px solid var(--grey-opacity);
+  border-bottom: 4px solid var(--grey-opacity);
 }

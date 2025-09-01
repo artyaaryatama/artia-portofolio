@@ -1,24 +1,24 @@
 import HomeHero from "@/components/home/HomeHero";
-import MarqueeImg from "@/components/MarqueeImg";
 import About from "@/components/home/About";
 import Graduate from "@/components/home/Graduate";
+import Experience from "@/components/home/Expereience";
 
 export default function Home() {
   return (
     <div className="
       flex flex-col 
-      gap-7
+      gap-18
     ">
       <HomeHero />
-      <MarqueeImg />
       <div className="
         mt-4
         flex flex-col 
-        gap-7
+        gap-8
       ">
         <About />
         <Graduate />
       </div>
+      <Experience />
     </div>
   );
 }
