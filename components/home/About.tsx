@@ -6,7 +6,7 @@ export default function About(){
 
   return (
     <div className="layout-gap 
-      flex flex-col gap-6 items-center
+      flex flex-col gap-6 items-left
     ">
       <div className="flex items-center gap-4">
         <h2 className=" font-space-grotesk
@@ -23,7 +23,7 @@ export default function About(){
       </div>
 
       <div>
-        <p className="font-figtree text-center
+        <p className="font-figtree text-left
           text-sm leading-5 
         ">
           As a Jr. frontend developer, I&apos;ve worked with VanillaJS, jQuery, React, Next.js, and TailwindCSS to create functional web projects. By building reusable components and working with API integration, I bridge design and development to deliver seamless, pixel-perfect applications.

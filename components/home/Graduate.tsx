@@ -5,10 +5,10 @@ export default function Graduate(){
   return (
     // pl-2 for centering manual the title due to graduation cap image div width cannot resizing independently without affecting the size of the Image
    <div className="layout-gap 
-    flex flex-col gap-6 items-center
+    flex flex-col gap-6 items-left
    ">
     
-    <div className="flex  gap-2 relative pl-8.5">
+    <div className="flex  gap-2 relative ">
       <div className="">
         <h3 className="font-space-grotesk
           text-4xl font-bold leading-[38px]
@@ -28,7 +28,7 @@ export default function Graduate(){
 
     </div>
     <div>
-      <p className="font-figtree text-center
+      <p className="font-figtree text-left
          text-sm leading-5 
       ">
         Graduated with a Bachelor&apos;s degree in Informatics Engineering from Hasanuddin University, Makassar, South Sulawesi, Indonesia.
