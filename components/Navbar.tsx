@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <nav className="
       fixed inset-x-0 top-0 z-50
-      bg-background/70 backdrop-filter backdrop-blur-lg w-full
+      bg-background/70 backdrop-filter backdrop-blur-sm w-full
       font-space-grotesk text-sm h-[62px]
       px-5 pt-3
       ">

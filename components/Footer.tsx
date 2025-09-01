@@ -1,5 +1,6 @@
 import SocialList from "./SocialList";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -29,10 +30,8 @@ export default function Footer() {
         </h3>
       </div>
 
-
-      
       <p className="font-figtree text-sm leading-5">
-        Currently I available for new projects and collaborations. If you&apos;re looking for a frontend developer who blends design into development, let&apos;s build together!
+        Currently I available for new projects and collaborations. If you&apos;re looking for a frontend developer who blends design into development, <span className="underline underline-offset-2  font-bold">let&apos;s build together!</span>
       </p>
 
       <div className="
@@ -40,19 +39,58 @@ export default function Footer() {
         flex flex-col gap-6
         
         ">
-        <SocialList />
 
         <div className="
-          flex justify-start">
-          <div className="border-6 border-primary w-[130px] h-[130px]">
+          flex justify-start gap-3 items-end">
+          <div className="border-4 border-primary w-[90px] h-[90px]">
             <Image 
               src= {'/person/zoom.jpg'}
               alt= "Artia Audrian Aryatama"
               width={300}
               height={300}
               draggable={false}
-              className="grayscale hover:grayscale-0 transition-all duration-500 object-cover"
+              className="grayscale hover:grayscale-0 focus:grayscale-0 transition-all duration-500 object-cover"
               />
+          </div>
+
+          <div>
+            <h5 className="font-space-grotesk
+              text-lg font-bold
+            ">
+              Socials
+            </h5>
+            <ul className=" font-figtree
+              text-sm leading-4 grid grid-cols-2 gap-1 
+            ">
+              <li>
+                <Link
+                  href={'/'}
+                >
+                  /Github 
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={'/'}
+                >
+                  /LinkedIn 
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={'/'}
+                >
+                  /Instagram 
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={'/'}
+                >
+                  /Email 
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
 

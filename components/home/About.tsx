@@ -34,7 +34,7 @@ export default function About(){
         <Button
           variant={'linkNoUnderline'}
           className="
-            text-sm 
+            text-sm border-2 border-primary font-semibold
           "
         >
           <Link
