@@ -19,7 +19,7 @@ export type MarqueeContentProps = FastMarqueeProps;
 export const MarqueeContent = ({
   loop = 0,
   autoFill = true,
-  pauseOnHover = true,
+  pauseOnHover = false,
   ...props
 }: MarqueeContentProps) => (
   <FastMarquee

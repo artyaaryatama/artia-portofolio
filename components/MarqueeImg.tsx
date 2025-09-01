@@ -31,7 +31,7 @@ export default function MarqueeImg () {
                 alt={images[index].alt}
                 width={400}
                 height={100}
-                className='w-full h-full object-cover greyscale hover:greyscale-0 transition-all duration-300'
+                className='w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300'
               />
             </MarqueeItem>
           ))}
