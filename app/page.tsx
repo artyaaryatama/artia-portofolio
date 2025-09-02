@@ -1,7 +1,8 @@
 import HomeHero from "@/components/home/HomeHero";
 import About from "@/components/home/About";
 import Graduate from "@/components/home/Graduate";
-import Experience from "@/components/home/Expereience";
+import Experience from "@/components/home/Experience";
+import Capstone from "@/components/home/Capstone";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Graduate />
       </div>
       <Experience />
+      <Capstone/>
     </div>
   );
 }

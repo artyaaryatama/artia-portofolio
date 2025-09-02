@@ -24,7 +24,7 @@ export default function HomeHero() {
           <h1 className="font-space-grotesk 
             text-4xl font-bold leading-[38px]
           ">
-            Hi, I&apos;m Artia Audrian Aryatama Frontent Web Developer
+            Hi, I&apos;m Artia Audrian Aryatama Frontend Web Developer
           </h1>
 
           <p className="font-figtree 

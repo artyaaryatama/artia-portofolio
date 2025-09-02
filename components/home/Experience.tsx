@@ -14,9 +14,11 @@ export default function Experience(){
 
         <Link
             href={'/experience'}
-            className="flex items-center gap-2 font-space-grotesk"
+            className="flex items-center gap-2 font-space-grotesk \
+              mt-1 
+              text-sm"
           >
-            See others 
+            OTHERS
             <MoveRight className="w-7 h-5" />
           </Link>
       </div>
@@ -28,7 +30,7 @@ export default function Experience(){
       </p>
 
       <div className="flex items-start gap-3 overflow-x-auto w-full 
-        pb-4
+        pb-5
         scrollbar-thin scrollbar-thumb-gray-400
       ">
         {
