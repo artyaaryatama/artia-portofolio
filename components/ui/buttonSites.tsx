@@ -1,6 +1,7 @@
 'use client';
 
 import { Button } from "../ui/button";
+import { Sticker } from "lucide-react";
 
 interface BtnSitesProps {
   link: string;
@@ -16,9 +17,10 @@ export default function BtnSites({ link, className }: BtnSitesProps) {
       className={className}
     >
       <Button 
-        className=" border-2 border-background text-primary bg-background w-full 
-        text-sm
+        className="text-foreground border-foreground hover:bg-primary hover:font-semibold border-2 bg-background
+        text-sm w-full
       ">
+        <Sticker/>
         Check the sites!
       </Button>
     </a>

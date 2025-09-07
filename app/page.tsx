@@ -8,13 +8,12 @@ export default function Home() {
   return (
     <div className="
       flex flex-col 
-      gap-18
+      gap-12
     ">
       <HomeHero />
       <div className="
-        mt-4
         flex flex-col 
-        gap-8
+        gap-12
       ">
         <About />
         <Graduate />

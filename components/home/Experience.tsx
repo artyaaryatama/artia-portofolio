@@ -1,7 +1,7 @@
 import ProjectBox from "../ProjectsBox"
 import { MoveRight } from "lucide-react"
 import { projectsFreelances } from "@/lib/projectsFreelances"
-import Link from "next/link"
+import { Button } from "../ui/button"
 
 export default function Experience(){
   return(
@@ -10,17 +10,7 @@ export default function Experience(){
         <h4 className="
           font-space-grotesk
           text-4xl font-bold leading-[38px]
-        ">Freelance <span  className="block">Experience</span></h4>
-
-        <Link
-            href={'/experience'}
-            className="flex items-center gap-2 font-space-grotesk \
-              mt-1 
-              text-sm"
-          >
-            OTHERS
-            <MoveRight className="w-7 h-5" />
-          </Link>
+        ">Freelance <span  className="inline">Experience</span></h4>
       </div>
 
       <p className="font-figtree 
@@ -29,14 +19,20 @@ export default function Experience(){
         1.5+ years of freelance experience, developing landing pages, web applications tailored to client needs.
       </p>
 
-      <div className="flex items-start gap-3 overflow-x-auto w-full 
+      {/* scrolled   
+        flex items-start gap-3 overflow-x-auto w-full 
+        pb-5
+        scrollbar-thin scrollbar-thumb-gray-400
+      */}
+      <div className="
+        flex items-start gap-3 overflow-x-auto w-full 
         pb-5
         scrollbar-thin scrollbar-thumb-gray-400
       ">
         {
           projectsFreelances.length > 0 && 
           projectsFreelances
-            .filter((_, index) => index < 2)
+            .filter((_, index) => index < 3)
             .map((data, index) => (
               <ProjectBox 
                 key={index}
@@ -48,12 +44,15 @@ export default function Experience(){
             ))
         }
 
-        <ProjectBox 
-          imgSrc={'none'}
-          imgAlt={''}
-          projectName={'See my other projects! 👀'}
-          duration={''}
-        />
+        <div className="w-65 h-40 flex items-center justify-center">
+          <Button
+            variant={'outline'}
+            className="flex justify-start items-center font-space-grotesk font-normal hover:bg-primary hover:font-semibold"
+          >
+            See my other projects! 👀 
+            <MoveRight className="w-10 h-7" />
+          </Button>
+        </div>
         
       </div>
     </div>

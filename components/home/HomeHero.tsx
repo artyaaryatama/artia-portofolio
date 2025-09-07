@@ -34,22 +34,18 @@ export default function HomeHero() {
           </p>
         </div>
 
-        <div className="layout-gap flex items-center
-          gap-4
+        <div className="layout-gap
         ">
-
-          <SocialList />
-
-          <div className="flex gap-3
+          <div className=" flex gap-3
             items-start
           ">
             <span className="relative flex size-2 ml-2 mt-1">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
-              <span className="relative inline-flex size-2 rounded-full bg-sky-500"></span>
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-75"></span>
+              <span className="relative inline-flex size-2 rounded-full bg-primary"></span>
             </span>
 
             <p className="font-figtree
-            text-sm leading-4">Available for new projects.</p>
+            text-sm leading-4 text-primary">Open to freelance, contract, or full-time opportunities.</p>
           </div>
 
         </div>

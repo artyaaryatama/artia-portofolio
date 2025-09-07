@@ -1,6 +1,7 @@
 'use client';
 
 import { Button } from "../ui/button";
+import { Terminal } from "lucide-react"
 
 interface BtnSourceCodeProps {
   link: string;
@@ -16,9 +17,11 @@ export default function BtnSourceCode({ link, className }: BtnSourceCodeProps) {
       className={className}
     >
       <Button 
-        className="border-2 border-primary text-foreground
+        className="text-foreground border-foreground hover:bg-primary hover:font-semibold border-2 bg-background
         text-sm w-full
       ">
+
+        <Terminal />
         Source Code
       </Button>
     </a>

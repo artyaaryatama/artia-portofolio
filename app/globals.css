@@ -48,10 +48,11 @@
 :root {
   --radius: 0.625rem;
   --primary: #BF8282;
+  --secondary: #eda5a5;
   --background: #FDF9F9;
   --border: oklch(0.922 0 0);
   --foreground: #1E1E1E;
-  --muted: #454444;
+  --muted: #333333;
   --accent: #ECEBEB;
   --grey-opacity: rgba(146, 137, 137, 0.7);
 
@@ -64,7 +65,6 @@
   --popover: oklch(1 0 0);
   --popover-foreground: #1E1E1E;
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
   --secondary-foreground: #1E1E1E;
   --accent-foreground: #1E1E1E;
   --destructive: oklch(0.577 0.245 27.325);

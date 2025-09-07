@@ -36,14 +36,14 @@ export default function ProjectBox(
           </div>
 
           <div className="flex flex-col items-center justify-center gap-1 
-            mt-2
+            mt-2 px-1
           ">
             <p className="text-center text-primary 
               text-xs
             ">{duration}</p>
             <p className="text-center text-wrap
-              text-xs leading-4
-            ">{projectName} </p>
+              text-sm leading-5
+            ">{imgAlt} | {projectName}</p>
           </div>
         </div>
         : 
