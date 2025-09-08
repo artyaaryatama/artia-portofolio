@@ -16,8 +16,7 @@ export default function HomeHero() {
           loading='lazy'
           className="object-cover 
           w-full 
-          
-          h-[192px]"
+          h-[242px]"
         />
 
         <div className="layout-gap">
@@ -34,18 +33,18 @@ export default function HomeHero() {
           </p>
         </div>
 
-        <div className="layout-gap
+        <div className="layout-gap 
         ">
           <div className=" flex gap-3
             items-start
           ">
-            <span className="relative flex size-2 ml-2 mt-1">
+            <span className="relative flex size-2 mt-[6px]">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-75"></span>
               <span className="relative inline-flex size-2 rounded-full bg-primary"></span>
             </span>
 
             <p className="font-figtree
-            text-sm leading-4 text-primary">Open to freelance, contract, or full-time opportunities.</p>
+            text-sm leading-5 text-primary">Open to freelance, contract, or full-time opportunities.</p>
           </div>
 
         </div>

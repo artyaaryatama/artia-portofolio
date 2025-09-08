@@ -30,14 +30,12 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${spaceGrotesk.variable} ${figtree.variable} antialiased 
-        pt-[10px]
         bg-background
         `}
       >
         <Navbar />
-        <div className="mt-[62px] mb-15">
+        <div className="mb-12">
           {children}
-
         </div>
         <Footer />
       </body>
