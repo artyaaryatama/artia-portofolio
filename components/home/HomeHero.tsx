@@ -1,5 +1,4 @@
 import Image from "next/image";
-import SocialList from "../SocialList";
 import MarqueeImg from "../MarqueeImg";
 
 export default function HomeHero() {

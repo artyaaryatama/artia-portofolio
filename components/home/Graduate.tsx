@@ -16,14 +16,9 @@ export default function Graduate(){
       </div> 
 
       <div className=" relative w-16">
-        <Image 
-          src="/icons/grad-cap.png"
-          alt="graduation cap"
-          width={100}
-          height={100}
-          className="w-16 absolute top-0 -left-3 rotate-8"
-        
-        />
+        <span className="absolute -top-1 -left-4 rotate-8 text-6xl">
+          🎓
+        </span>
       </div>
 
     </div>
