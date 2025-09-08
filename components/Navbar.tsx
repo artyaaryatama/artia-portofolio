@@ -30,7 +30,7 @@ export default function Navbar() {
             font-bold leading-[14px]
             ">
             <Link href={'/'}>
-              ARTIA <span className="block">PORTO-</span> <span>FOLIO</span>
+              ARTIA <span className="block">PORTO—</span> <span>FOLIO</span>
             </Link>
 
           </div>

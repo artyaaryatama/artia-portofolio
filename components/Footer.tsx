@@ -41,8 +41,9 @@ export default function Footer() {
               <Image 
                 src= {'/person/zoom.jpg'}
                 alt= "Artia Audrian Aryatama"
-                width={300}
-                height={300}
+                width={400}
+                height={400}
+                loading='lazy'
                 draggable={false}
                 className="grayscale hover:grayscale-0 focus:grayscale-0 transition-all duration-500 object-cover"
                 />

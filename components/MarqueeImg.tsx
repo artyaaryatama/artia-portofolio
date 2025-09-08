@@ -30,8 +30,10 @@ export default function MarqueeImg () {
               <Image 
                 src={images[index].src}
                 alt={images[index].alt}
-                width={400}
-                height={100}
+                loading='lazy'
+                draggable={false}
+                width={700}
+                height={700}
                 className='w-full h-full object-cover grayscale hover:grayscale-0 focus:grayscale-0 transition-all duration-300'
               />
             </MarqueeItem>

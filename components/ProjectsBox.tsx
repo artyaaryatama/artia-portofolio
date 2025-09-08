@@ -27,8 +27,10 @@ export default function ProjectBox(
                 <Image 
                   src={imgSrc}
                   alt={imgAlt}
-                  width={200}
-                  height={200}
+                  draggable={false}
+                  width={700}
+                  height={700}
+                  loading='lazy'
                   className="w-54 h-30 object-cover grayscale hover:grayscale-0 rounded-xs"
                 />
               </Link>

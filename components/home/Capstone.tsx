@@ -17,8 +17,10 @@ export default function Capstone(){
               <Image 
                 src='/projects/sma-athirah.webp'
                 alt=''
-                width={200}
-                height={200}
+                width={700}
+                draggable={false}
+                height={700}
+                loading='lazy'
                 className="w-74 h-40 object-cover grayscale hover:grayscale-0 rounded-xs"
               />
             </div>
