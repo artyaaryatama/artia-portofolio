@@ -56,7 +56,7 @@ export default function Footer() {
                 Socials
               </h5>
               <ul className=" font-figtree
-                text-sm leading-4 grid grid-cols-2 gap-1 
+                text-sm leading-4 grid grid-cols-2 gap-x-2 gap-y-1
               ">
                 <li>
                   <Link
@@ -95,15 +95,15 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="relative bg-primary font-space-grotesk px-5 py-2 mt-10 flex">
+      <div className="bg-primary font-space-grotesk px-5 pt-5 pb-1 mt-10 flex flex-col">
         <p className=" text-background
         text-left text-sm 
         ">@ <span className="block">2025</span></p>
-        <p className="text-background text-3xl font-semibold
-          absolute bottom-0 right-0
+        <p className="text-background font-semibold text-2xl
+          text-right leading-[28px]
         "
          >
-          Artia Audrian Aryatama
+          ARTIA AUDRIAN ARYATAMA
         </p>
       </div>
     </footer>
