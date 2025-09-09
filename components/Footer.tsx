@@ -4,10 +4,10 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="
-      mb-2
+      bg-muted pt-10
     ">
       <div className="layout-gap
-      flex flex-col gap-6">
+      flex flex-col gap-6 text-background">
         <div className="flex items-start">
           <h3
             className="
@@ -95,10 +95,16 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="bg-primary font-space-grotesk py-2 mt-10">
+      <div className="relative bg-primary font-space-grotesk px-5 py-2 mt-10 flex">
         <p className=" text-background
-        text-center text-sm 
-        ">@ 2025 Artia Audrian Aryatama</p>
+        text-left text-sm 
+        ">@ <span className="block">2025</span></p>
+        <p className="text-background text-3xl font-semibold
+          absolute bottom-0 right-0
+        "
+         >
+          Artia Audrian Aryatama
+        </p>
       </div>
     </footer>
   )
