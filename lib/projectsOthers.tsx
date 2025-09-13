@@ -20,7 +20,7 @@ export const projectsOthers = [
     linkProd: "https://obat-tradisional-blockchain.vercel.app",
   },
   {
-    src: '/projects/ubicon-lab.webp',
+    src: '/projects/ubicon.png',
     alt: 'Build a CMS',
     name: 'Ubicom Lab UNHAS',
     duration: 'July 2023 - January 2024',

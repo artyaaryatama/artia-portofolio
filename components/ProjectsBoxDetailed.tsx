@@ -67,7 +67,7 @@ export default function ProjectBoxDetailed(
               text-md leading-5
             ">{description}</p>
           </div>
-          <div className="grid grid-cols-2 gap-3 items-center mt-3">
+          <div className="grid grid-cols-2 gap-3 items-center mt-3 px-1">
             {
               linkRepo !== '' && (
                 <BtnSourceCode
