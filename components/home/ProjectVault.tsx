@@ -21,9 +21,11 @@ export default function ProjectVault(){
       </p>
 
       <div className="
-        flex items-start gap-3 overflow-x-auto w-full 
+        flex gap-3 w-full 
         pb-5
         scrollbar-thin scrollbar-thumb-gray-400
+        flex-col items-center
+        lg:flex-row lg:overflow-x-auto lg:items-start
       ">
         {
           projectsOthers.length > 0 && 

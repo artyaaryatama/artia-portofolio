@@ -34,7 +34,7 @@ export default function Navbar() {
     <nav
       className={`
         fixed inset-x-0 top-3 z-50
-        font-space-grotesk text-sm
+        font-space-grotesk text-sm lg:text-lg
         transition-transform duration-500
       `}
     >
@@ -42,14 +42,14 @@ export default function Navbar() {
 
         <li
           className={`
-            text-sm
+            text-sm lg:text-lg 
             bg-background/70 backdrop-filter backdrop-blur-sm
             py-3 px-5
             transition-all duration-700 ease-in-out
             ${hidden ? "-translate-x-full opacity-0" : "translate-x-0 opacity-100"}
           `}
         >
-          <div className="font-bold leading-[14px]">
+          <div className="font-bold leading-[14px] lg:leading-4">
             <Link href={'/'}>
               {/* <Image 
                 src={'/meta-icons/logo.png'}
@@ -75,7 +75,7 @@ export default function Navbar() {
           <Button
             size={'nopady'}
             variant={'link'}
-            className={`${currentPath === '/' ? 'font-bold underline underline-offset-2' : ''}`}
+            className={`${currentPath === '/' ? 'font-bold underline underline-offset-2 ' : ''} lg:text-lg text-sm`}
           >
             <Link href={{ pathname: "/" }}>
               HOME
@@ -84,7 +84,7 @@ export default function Navbar() {
           <Button
             size={'nopady'}
             variant={'link'}
-            className={`${currentPath === '/experience' ? 'font-bold underline underline-offset-2' : ''}`}
+            className={`${currentPath === '/experience' ? 'font-bold underline underline-offset-2 lg:text-lg ' : ''} lg:text-lg text-sm`}
           >
             <Link href={{ pathname: "/experience" }}>
               EXPERIENCE

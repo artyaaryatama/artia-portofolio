@@ -11,6 +11,7 @@ export default function About(){
       <div className="flex items-center gap-4">
         <h2 className=" font-space-grotesk
           text-4xl font-bold leading-[38px]
+          lg:text-6xl lg:leading-16
         ">
           About 
         </h2>
@@ -18,6 +19,7 @@ export default function About(){
         <div className="bg-primary px-3 py-2 -rotate-4 rounded-sm">
           <h2 className=" font-space-grotesk
             text-[26px] font-bold leading-[38px] 
+            lg:text-[48px]
           ">Me</h2>
         </div>
       </div>
@@ -25,8 +27,9 @@ export default function About(){
       <div>
         <p className="font-figtree text-left 
           text-sm leading-5 
+          lg:text-lg lg:leading-6
         ">
-          As a Jr. frontend developer, I&apos;ve worked with VanillaJS, jQuery, React, Next.js, and TailwindCSS to create functional web projects. By building reusable components and working with API integration, I bridge design and development to deliver seamless, pixel-perfect applications.
+          As a frontend developer, I&apos;ve worked with VanillaJS, jQuery, React, Next.js, and TailwindCSS to create functional web projects. By building reusable components and working with API integration, I bridge design and development to deliver seamless, pixel-perfect applications.
         </p>
       </div>
 

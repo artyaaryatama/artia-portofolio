@@ -17,6 +17,8 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px); 
+
+  --breakpoint-xs: 24rem;
   
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -135,7 +137,8 @@ body{
 }
 
 .layout-gap{
-  padding: 0 20px;
+  padding-right: clamp(0.6rem, 8vw, 10rem);
+  padding-left: clamp(0.6rem, 8vw, 10rem);
 }
 
 @media (max-width: 1090px) {
