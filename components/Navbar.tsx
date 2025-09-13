@@ -4,6 +4,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Button } from "./ui/button"
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Navbar() {
   const currentPath = usePathname();
@@ -50,6 +51,13 @@ export default function Navbar() {
         >
           <div className="font-bold leading-[14px]">
             <Link href={'/'}>
+              {/* <Image 
+                src={'/favicons/logo.png'}
+                alt="logo"
+                width={600}
+                height={600}
+                className="w-10"
+              /> */}
               ARTIA <span className="block">PORTO—</span> <span>FOLIO</span>
             </Link>
           </div>
