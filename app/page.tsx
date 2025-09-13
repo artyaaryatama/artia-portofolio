@@ -2,7 +2,7 @@ import HomeHero from "@/components/home/HomeHero";
 import About from "@/components/home/About";
 import Graduate from "@/components/home/Graduate";
 import Experience from "@/components/home/Experience";
-import Capstone from "@/components/home/Capstone";
+import ProjectVault from "@/components/home/ProjectVault";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
         <Graduate />
       </div>
       <Experience />
-      <Capstone/>
+      <ProjectVault/>
     </div>
   );
 }

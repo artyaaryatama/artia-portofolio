@@ -15,7 +15,7 @@ export default function Capstone(){
           <div className="w-full h-54 bg-primary border-6 border-foreground ">
             <div className="custom-border w-full h-full flex items-center justify-center">
               <Image 
-                src='/projects/sma-athirah.webp'
+                src='/projects/ot-blockchain.webp'
                 alt=''
                 width={700}
                 draggable={false}

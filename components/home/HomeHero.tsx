@@ -10,8 +10,8 @@ export default function HomeHero() {
         <Image 
           src={'/person/w-img.jpg'}
           alt="Artia Audrian Aryatama"
-          width={600}
-          height={600}
+          width={1000}
+          height={1000}
           draggable={false}
           loading='lazy'
           className="object-cover 

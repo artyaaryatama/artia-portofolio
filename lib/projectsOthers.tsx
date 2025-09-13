@@ -3,7 +3,7 @@ export const projectsOthers = [
     src: '/projects/porto-design.webp',
     alt: 'My Portofolio Sites',
     name: '',
-    duration: 'Juni - Agustus 2025',
+    duration: 'Agustus 2025 - Present',
     description: "I designed and developed this portfolio website using TypeScript and Next.js. It serves as a space where I showcase both my professional projects and the work I've built together with teams.",
     tags: [ 'Typescript', 'NextJs', 'TailwindCSS', 'Marquee'],
     linkRepo: "https://github.com/artyaaryatama/artia-portofolio.git",
