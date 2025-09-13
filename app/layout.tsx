@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     siteName: "Artia Aryatama | Frontend Web Developer",
     images: [
       {
-        url: "/meta-icons/og.png",
+        url: "/meta-icons/og1.png",
         width: 1200,
         height: 630,
         alt: "My Logo",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Artia Aryatama | Frontend Web Developer",
     description: "Discover my portfolio, featuring a range of completed web projects.",
-    images: "/meta-icons/og.png",
+    images: "/meta-icons/og1.png",
   },
 };
 
