@@ -52,7 +52,7 @@ export default function Navbar() {
           <div className="font-bold leading-[14px]">
             <Link href={'/'}>
               {/* <Image 
-                src={'/favicons/logo.png'}
+                src={'/meta-icons/logo.png'}
                 alt="logo"
                 width={600}
                 height={600}
