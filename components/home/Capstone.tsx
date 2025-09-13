@@ -1,0 +1,57 @@
+import Image from "next/image"
+import BtnSourceCode from "../ui/buttonSourceCode"
+import BtnSites from "../ui/buttonSites"
+
+export default function Capstone(){
+  return(
+    <div className="">
+      <div className="layout-gap">
+        <h5 className="
+          font-space-grotesk
+          text-4xl font-bold leading-[38px]
+        ">Capstone <span className="block">Build:</span></h5>
+
+        <div className="flex flex-col gap-6 mt-6">
+          <div className="w-full h-54 bg-primary border-6 border-foreground ">
+            <div className="custom-border w-full h-full flex items-center justify-center">
+              <Image 
+                src='/projects/ot-blockchain.webp'
+                alt=''
+                width={700}
+                draggable={false}
+                height={700}
+                loading='lazy'
+                className="w-74 h-40 object-cover grayscale hover:grayscale-0 rounded-xs"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col gap-3 ">
+            <p className="font-figtree text-left
+            text-sm leading-5 ">
+              As my Bachelor&apos;s thesis project, I built a decentralized web application (dApp) to track traditional medicine, powered by smart contracts on Ethereum Sepolia. Over 4-5 months, I developed the system from scratch, my first  React.js project alsongside Ethers.js, Hardhat, with Firebase and IPFS as off-chain storage.
+            </p>
+            <p className="font-figtree text-left
+            text-sm leading-5 ">
+              This project explored blockchain as a secure yet costly alternative to conventional databases. While the approach proved effective for ensuring transparency and data integrity, it also revealed the practical challenge, real-time blockchain storage demands significant costs, making it more of a fancy alternative than a fully viable solution for production-scale systems.
+            </p>
+          </div>
+
+        </div>
+        
+        <div className="grid grid-cols-2 gap-3 items-center mt-6">
+          <BtnSourceCode
+            link="http://localhost:3000/" 
+            className="cols-span-1"
+          />
+          <BtnSites
+            link="http://localhost:3000/" 
+            className="cols-span-1"
+          />
+
+        </div>
+
+      
+      </div>
+    </div>
+  )
+}

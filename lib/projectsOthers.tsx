@@ -1,0 +1,42 @@
+export const projectsOthers = [
+  {
+    src: '/projects/porto-design.webp',
+    alt: 'My Portofolio Sites',
+    name: '',
+    duration: 'Agustus 2025 - Present',
+    description: "I designed and developed this portfolio website using TypeScript and Next.js. It serves as a space where I showcase both my professional projects and the work I've built together with teams.",
+    tags: [ 'Typescript', 'NextJs', 'TailwindCSS', 'Marquee'],
+    linkRepo: "https://github.com/artyaaryatama/artia-portofolio.git",
+    linkProd: "https://artia-space.vercel.app",
+  },
+  {
+    src: '/projects/ot-blockchain.webp',
+    alt: 'dApp for Traditional Medicine Tracking',
+    name: 'Thesis Undergraduate Project',
+    duration: 'September 2024 - January 2025',
+    description: 'For my undergraduate thesis project, I independently developed a web application using ReactJS from the ground up. The system was designed to trace and manage traditional medicine data by integrating blockchain, decentralized storage, and cloud services. I implemented Sepolia (Ethereum test network) as the layer for recording transaction data, ensuring that every product batch could be verified through immutable transaction hashes. To complement this, I used Firebase to store and query transaction history, making it easier to display and track data efficiently on the frontend. For medicine product details and required documentation, I integrated IPFS as a decentralized file storage system. Beyond tracking, the system was built to cover the entire process of medicine registration in Indonesia under BPOM (similar to the FDA), enabling secure storage of product details and submission files throughout the registration workflow.',
+    tags: [ 'ReactJs', 'Smart Contract', 'Hardhat', 'Sepolia Network', 'Metamask', 'EtherJs', 'Firabase', 'IPFS', 'Material UI', 'Sweet Alert'],
+    linkRepo: "https://github.com/artyaaryatama/obat-tradisional-blockchain",
+    linkProd: "https://obat-tradisional-blockchain.vercel.app",
+  },
+  {
+    src: '/projects/ubicon.png',
+    alt: 'Build a CMS',
+    name: 'Ubicom Lab UNHAS',
+    duration: 'July 2023 - January 2024',
+    description: "I worked on developing a content management system (CMS) for the Ubicom Lab website at Hasanuddin University, collaborating closely with the backend team. The main goal was to make the lab's news and gallery dynamic, so they could be easily managed through the CMS and displayed directly on the website.",
+    tags: ['VanillaJS', 'AJAX', 'jQuery', 'Sweet Alert'],
+    linkRepo: "",
+    linkProd: "",
+  },
+  {
+    src: '/projects/pln-sigadis.webp',
+    alt: 'Develop SiGadis Web',
+    name: 'PLN UP3 Makassar (Internship)',
+    duration: 'September 2022 - March 2023',
+    description: 'I worked on siGadis (Sistem Gardu Terdistribusi), a web application designed to monitor power distribution substations across South Sulawesi. I was responsible for designing and developing the web application, collaborating closely with the backend team to connect and process the monitoring data. The system analyzes current and power flow to provide recommendations on whether a substation is healthy, needs inspection, or requires replacement. It was built to replace the manual calculation process, making monitoring faster and more accurate.',
+    tags: ['VanillaJS', 'AJAX', 'jQuery', 'Sweet Alert'],
+    linkRepo: "",
+    linkProd: "",
+  }
+]
