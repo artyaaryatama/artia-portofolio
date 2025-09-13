@@ -26,7 +26,7 @@ export default function ExprProjects({projectsData, projectTitle}:projects){
           text-4xl font-bold leading-[38px]
         ">{projectTitle}</h5>
 
-        <div className="flex flex-col gap-6 mt-6">
+        <div className="flex flex-col gap-14 mt-6">
           {
             projectsData.length > 0 && 
             projectsData.map((data, key) => (

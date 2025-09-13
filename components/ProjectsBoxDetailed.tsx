@@ -43,38 +43,51 @@ export default function ProjectBoxDetailed(
           </div>
         </div>
 
-        <div className="flex flex-col items-start justify-center gap-1 
-          my-2 px-1
-        ">
-          <p className="text-left text-primary 
-            text-sm
-          ">{duration}</p>
-          <p className="text-left text-wrap
-            text-md leading-5
-          ">{imgAlt} | {projectName}</p>
-          <p className="text-left text-wrap
-            text-md leading-5
-          ">{description}</p>
-        </div>
-        
-        <ul>
-          {tags.map((tag, idx) => (
-            <li key={idx} className="inline-block mr-2 text-xs bg-gray-200 px-2 py-1 rounded">
-              {tag}
-            </li>
-          ))}
-        </ul>
-        <div className="grid grid-cols-2 gap-3 items-center mt-6">
-          <BtnSourceCode
-            link={linkRepo}
-            className="cols-span-1"
-          />
-          <BtnSites
-            link={linkProd} 
-            className="cols-span-1"
-          />
+        <div>
+          <div className="flex flex-col items-start justify-center gap-1 
+            my-2 px-1
+          ">
+            <p className="text-left text-primary 
+              text-md
+            ">{duration}</p>
+            <p className="text-left text-wrap
+              text-md leading-5 font-semibold my-1
+            ">{imgAlt} | {projectName}</p>
 
+            <div className="flex my-1">
+              <ul className="flex gap-2 flex-wrap">
+                {tags.map((tag, idx) => (
+                  <li key={idx} className=" text-xs bg-greyish px-2 py-1 rounded">
+                    {tag}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <p className="text-left text-wrap
+              text-md leading-5
+            ">{description}</p>
+          </div>
+          <div className="grid grid-cols-2 gap-3 items-center mt-3">
+            {
+              linkRepo !== '' && (
+                <BtnSourceCode
+                  link={linkRepo}
+                  className={`${linkProd? 'col-span-1' : 'col-span-2' }`}
+                  />
+                )
+              }
+            {
+              linkProd !== '' && (
+                <BtnSites
+                link={linkProd} 
+                className={`${linkRepo? 'col-span-1' : 'col-span-2' }`}
+                />
+              )
+            }
+
+          </div>
         </div>
+
       </div>
     </div>
   )

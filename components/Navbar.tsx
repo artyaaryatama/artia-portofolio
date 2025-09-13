@@ -76,7 +76,7 @@ export default function Navbar() {
           <Button
             size={'nopady'}
             variant={'link'}
-            className={`${currentPath === '/experience' ? 'font-bold' : ''}`}
+            className={`${currentPath === '/experience' ? 'font-bold underline underline-offset-2' : ''}`}
           >
             <Link href={{ pathname: "/experience" }}>
               EXPERIENCE

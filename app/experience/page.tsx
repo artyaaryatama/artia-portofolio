@@ -2,6 +2,7 @@ import ExprHero from "@/components/experience/ExprHero"
 import ExprProjects from "@/components/experience/ExprProjects"
 import MarqueeText from "@/components/MarqueeText"
 import { projectsFreelances } from "@/lib/projectsFreelances"
+import { projectsOthers } from "@/lib/projectsOthers"
 
 export default function Page() {
   return (
@@ -20,7 +21,7 @@ export default function Page() {
         styleText="text-primary text-2xl  font-figtree"
       />
       <ExprProjects 
-        projectsData={projectsFreelances}
+        projectsData={projectsOthers}
         projectTitle="My other Projects..."
       />
     </div>

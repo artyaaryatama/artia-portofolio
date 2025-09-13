@@ -39,7 +39,6 @@ export const metadata: Metadata = {
     { rel: "manifest", url: "/metatags/manifest.json" },
     { rel: "msapplication-TileImage", url: "/metatags/ms-icon-144x144.png" }
   ],
-  themeColor: "#ffffff",
   other: {
     "msapplication-TileColor": "#ffffff",
   }

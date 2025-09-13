@@ -1,0 +1,42 @@
+export const projectsOthers = [
+  {
+    src: '/projects/sma-athirah.webp',
+    alt: 'My Portofolio Sites',
+    name: 'Thesis Undergraduate Project',
+    duration: 'Juni - Agustus 2025',
+    description: "I designed and developed this portfolio website using TypeScript and Next.js. It serves as a space where I showcase both my professional projects and the work I've built together with teams.",
+    tags: [ 'Typescript', 'NextJs', 'TailwindCSS', 'Marquee'],
+    linkRepo: "https://github.com/artyaaryatama/artia-portofolio.git",
+    linkProd: "https://artia-space.vercel.app",
+  },
+  {
+    src: '/projects/sma-athirah.webp',
+    alt: 'dApp for Traditional Medicine Tracking',
+    name: 'Thesis Undergraduate Project',
+    duration: 'September 2024 - January 2025',
+    description: 'For my undergraduate thesis project, I independently developed a web application using ReactJS from the ground up. The system was designed to trace and manage traditional medicine data by integrating blockchain, decentralized storage, and cloud services. I implemented Sepolia (Ethereum test network) as the layer for recording transaction data, ensuring that every product batch could be verified through immutable transaction hashes. To complement this, I used Firebase to store and query transaction history, making it easier to display and track data efficiently on the frontend. For medicine product details and required documentation, I integrated IPFS as a decentralized file storage system. Beyond tracking, the system was built to cover the entire process of medicine registration in Indonesia under BPOM (similar to the FDA), enabling secure storage of product details and submission files throughout the registration workflow.',
+    tags: [ 'ReactJs', 'Smart Contract', 'Hardhat', 'Sepolia Network', 'Metamask', 'EtherJs', 'Firabase', 'IPFS', 'Material UI', 'Sweet Alert'],
+    linkRepo: "https://github.com/artyaaryatama/obat-tradisional-blockchain",
+    linkProd: "https://obat-tradisional-blockchain.vercel.app",
+  },
+  {
+    src: '/projects/cahaya-petshop.webp',
+    alt: 'Build a Web Dashboard',
+    name: 'Cahaya Petshop',
+    duration: 'December 2023 - February 2024',
+    description: "At Cahaya Petshop, I built the UI for a web dashboard that makes it easier to manage all of the store's services such as pet hotel, pet grooming, and pet clinic. A key part of the system is the monitoring feature, where staff can track essential activities like feeding, drinking, temperature, urinate, defacate, and therapy schedules. My focus was on crafting a clean, user-friendly interface, while collaborating with the backend team to connect the frontend with the system's core functionalities.",
+    tags: ['VanillaJS', 'AJAX', 'jQuery'],
+    linkRepo: "",
+    linkProd: "",
+  },
+  {
+    src: '/projects/pupr-simtaru.webp',
+    alt: 'Build a landing page for SIMTARU',
+    name: 'PUPR Sulawesi Selatan',
+    duration: 'Juni - Agustus 2025',
+    description: 'Together with the UI/UX team and other frontend developers, I worked on developing several key pages for the SIMTARU (Sistem Tata Ruang) website, including the homepage, spatial planning, regulations, publications, partners, and registration. While the site provides a clear call-to-action to download the mobile app, but also acts as an information portal where users can easily access regulations, spatial planning data, official publications, and other related content. My focus was on translating the designs into clean, functional frontend pages that deliver both accessibility and consistency with the app experience.',
+    tags: [ 'PHP', 'HTML', 'CSS', 'Bootsrap'],
+    linkRepo: "",
+    linkProd: "http://simtaru.sulselprov.go.id/",
+  }
+]

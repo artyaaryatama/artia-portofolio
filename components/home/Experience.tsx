@@ -2,6 +2,7 @@ import ProjectBox from "../ProjectsBox"
 import { MoveRight } from "lucide-react"
 import { projectsFreelances } from "@/lib/projectsFreelances"
 import { Button } from "../ui/button"
+import Link from "next/link"
 
 export default function Experience(){
   return(
@@ -45,13 +46,18 @@ export default function Experience(){
         }
 
         <div className="w-65 h-40 flex items-center justify-center">
-          <Button
-            variant={'outline'}
-            className="flex justify-start items-center font-space-grotesk font-normal hover:bg-primary hover:font-semibold"
+          <Link 
+            href={'/experience'}
           >
-            See my other projects! 👀 
-            <MoveRight className="w-10 h-7" />
-          </Button>
+            <Button
+              variant={'outline'}
+              className="flex justify-start items-center font-space-grotesk font-normal hover:bg-primary hover:font-semibold hover:cursor-pointer"
+            >
+              See my other projects! 👀 
+              <MoveRight className="w-10 h-7" />
+            </Button>
+            
+          </Link>
         </div>
         
       </div>

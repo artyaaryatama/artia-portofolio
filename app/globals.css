@@ -9,8 +9,9 @@
   --color-primary: var(--primary);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-grey-opacity: var(--grey-opacity);
   --font-space-grotesk: var(--font-space-grotesk);
+  --color-grey-opacity: var(--grey-opacity);
+  --color-greyish: var(--greyish);
   --font-figtree: var(--font-figtree);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -55,6 +56,7 @@
   --muted: #333333;
   --accent: #ECEBEB;
   --grey-opacity: rgba(146, 137, 137, 0.7);
+  --greyish: #e4dedec6;
 
   --font-header: 'Space Grotesk', sans-serif;
   --font-body: 'Figtree', sans-serif;
