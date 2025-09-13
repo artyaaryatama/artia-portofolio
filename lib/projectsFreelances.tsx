@@ -7,7 +7,7 @@ export const projectsFreelances = [
     description: 'During my time as a Frontend Developer at SMA Athirah Bone, I worked on building both the landing page and a custom CMS to manage dynamic content such as news, achievements, teacher data, alumni highlights, facilities, and announcements. I was responsible for designing and developing all key pages, ensuring that the content looked clean, accessible, and easy to update without manual hassle. From crafting the news section to structuring the alumni showcase, I handled the entire frontend process, from design to implementation while integrating Supabase as the backend with its SQL database, built-in authentication, and auto-generated API calls to make content management seamless and scalable.',
     tags: [ 'Typescript', 'NextJs', 'ShadCn', 'TailwindCSS', 'Supabase', 'Tiptap Editor'],
     linkRepo: "",
-    linkProd: "https://smaathirahbone.sch.id/",
+    linkProd: "https://smaathirahbone.sch.id",
   },
   {
     src: '/projects/cahaya-petshop.webp',
@@ -27,6 +27,6 @@ export const projectsFreelances = [
     description: 'Together with the UI/UX team and other frontend developers, I worked on developing several key pages for the SIMTARU (Sistem Tata Ruang) website, including the homepage, spatial planning, regulations, publications, partners, and registration. While the site provides a clear call-to-action to download the mobile app, but also acts as an information portal where users can easily access regulations, spatial planning data, official publications, and other related content. My focus was on translating the designs into clean, functional frontend pages that deliver both accessibility and consistency with the app experience.',
     tags: [ 'PHP', 'HTML', 'CSS', 'Bootsrap'],
     linkRepo: "",
-    linkProd: "http://simtaru.sulselprov.go.id/",
+    linkProd: "http://simtaru.sulselprov.go.id",
   }
 ]

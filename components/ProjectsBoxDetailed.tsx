@@ -52,7 +52,7 @@ export default function ProjectBoxDetailed(
             ">{duration}</p>
             <p className="text-left text-wrap
               text-md leading-5 font-semibold my-1
-            ">{imgAlt} | {projectName}</p>
+            ">{imgAlt} {projectName !== '' && ` | ${projectName}`} </p>
 
             <div className="flex my-1">
               <ul className="flex gap-2 flex-wrap">
