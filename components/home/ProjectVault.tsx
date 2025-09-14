@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export default function ProjectVault(){
   return(
-    <div className="layout-gap flex flex-col gap-6">
+    <div className="layout-gap flex flex-col gap-3">
       <div className="flex justify-between items-start">
         <h4 className="
           font-space-grotesk
@@ -16,21 +16,21 @@ export default function ProjectVault(){
 
       <p className="font-figtree 
         text-sm leading-5 
+        lg:text-base lg:leading-6
       ">
        A curated archive of my projects, from collaborations to experiments and side creations, each marking a step in my journey.
       </p>
 
       <div className="
-        flex gap-3 w-full 
-        pb-5
         scrollbar-thin scrollbar-thumb-gray-400
-        flex-col items-center
-        lg:flex-row lg:overflow-x-auto lg:items-start
+        mt-4
+        grid gap-3 grid-cols-1 sm:grid-cols-2 
+        lg:flex lg:pb-5 lg:flex-row lg:overflow-x-auto lg:items-start
       ">
         {
           projectsOthers.length > 0 && 
           projectsOthers
-            .filter((_, index) => index < 3)
+            .filter((_, index) => index < 4)
             .map((data, index) => (
               <ProjectBox 
                 key={index}
@@ -42,7 +42,8 @@ export default function ProjectVault(){
             ))
         }
 
-        <div className="w-65 h-40 flex items-center justify-center">
+        {/* <div className=" flex items-center mt-3
+          lg:justify-center lg:w-65 lg:h-40 lg:mt-0">
           <Link 
             href={'/experience'}
           >
@@ -55,7 +56,7 @@ export default function ProjectVault(){
             </Button>
             
           </Link>
-        </div>
+        </div> */}
         
       </div>
     </div>

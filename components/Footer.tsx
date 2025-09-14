@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
 
         <p className="font-figtree text-sm leading-5
-          lg:text-lg lg:leading-6 lg:w-170
+          lg:text-base lg:leading-6 lg:w-170
         ">
           Currently open to new opportunities in freelance, contract, or full-time positions. If you&apos;re looking for a frontend developer who bridges design and development, <span className="underline underline-offset-2  font-bold">let&apos;s build something great together.</span>
         </p>
@@ -110,7 +110,7 @@ export default function Footer() {
 
       <div className="bg-primary font-space-grotesk py-5 flex flex-col layout-gap">
         <p className=" text-background
-        text-left text-sm lg:text-lg lg:leading-6
+        text-left text-sm lg:text-base lg:leading-6
         ">@ <span className="block">2025</span></p>
         <p className="text-background font-semibold text-2xl
           text-right leading-[28px]

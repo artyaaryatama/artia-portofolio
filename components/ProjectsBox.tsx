@@ -12,11 +12,11 @@ export default function ProjectBox(
   {imgSrc, imgAlt, projectName, duration} : project
 ){
   return(
-    <div className="font-figtree w-65">
+    <div className="font-figtree w-full lg:w-85">
       {
         imgSrc !== 'none' ? 
         <div>
-          <div className="w-65 h-40 bg-primary border-6 border-foreground 
+          <div className="w-full lg:w-85 h-40 bg-primary border-6 border-foreground 
 
           ">
             <div className="custom-border w-full h-full flex items-center justify-center">
@@ -37,19 +37,20 @@ export default function ProjectBox(
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center gap-1 
-            mt-2 px-1
+          <div className="flex flex-col items-start justify-center gap-1 
+            mt-3 mb-2 px-1
+            lg:items-center lg:mt-2 lg:mb-0
           ">
-            <p className="text-center text-primary 
-              text-xs
+            <p className="text-left text-primary 
+              text-xs md:text-sm lg:text-center
             ">{duration}</p>
-            <p className="text-center text-wrap
-              text-sm leading-5
-            ">{imgAlt} | {projectName}</p>
+            <p className="text-left text-wrap
+              text-sm lg:text-md leading-5 lg:text-center
+            ">{imgAlt} {projectName !== '' && ` | ${projectName}`}</p>
           </div>
         </div>
         : 
-        <div className="w-65 h-40 bg-primary border-6 border-foreground 
+        <div className="w-full md:w-65 h-40 bg-primary border-6 border-foreground 
         ">
           <div className="custom-border w-full h-full flex items-center justify-center bg-foreground">
             <Link 

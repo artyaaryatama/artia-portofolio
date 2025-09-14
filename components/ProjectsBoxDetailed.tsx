@@ -64,7 +64,7 @@ export default function ProjectBoxDetailed(
               </ul>
             </div>
             <p className="text-left text-wrap
-              text-md leading-5
+              text-sm leading-5 lg:text-base lg:leading-6
             ">{description}</p>
           </div>
           <div className="grid grid-cols-2 gap-3 items-center mt-3 px-1">

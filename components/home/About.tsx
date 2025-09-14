@@ -5,7 +5,7 @@ import { MoveRight } from "lucide-react"
 export default function About(){
 
   return (
-    <div className="layout-gap 
+    <div className="
       flex flex-col gap-6 items-left
     ">
       <div className="flex items-center gap-4">
@@ -27,7 +27,7 @@ export default function About(){
       <div>
         <p className="font-figtree text-left 
           text-sm leading-5 
-          lg:text-lg lg:leading-6
+          lg:text-base lg:leading-6
         ">
           As a frontend developer, I&apos;ve worked with VanillaJS, jQuery, React, Next.js, and TailwindCSS to create functional web projects. By building reusable components and working with API integration, I bridge design and development to deliver seamless, pixel-perfect applications.
         </p>

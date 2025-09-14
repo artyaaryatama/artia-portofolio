@@ -11,38 +11,42 @@ export default function HomeHero() {
         <div className="hidden lg:flex layout-gap
           flex-row gap-10 items-center
         ">
-          <div className="w-2/5 h-86 relative">
+          <div className="w-2/5 h-66 relative">
             <Image 
-              src={'/person/w-img.jpg'}
+              src="/person/w-img.jpg"
               alt="Artia Audrian Aryatama"
               width={1000}
               height={1000}
               draggable={false}
-              loading='lazy'
-              className="absolute top-0 right-0 object-cover object-[45%_50%] w-116 h-63 z-20"
+              loading="lazy"
+              className="absolute top-0 right-0 object-cover object-[45%_50%] 
+                        w-3/4 max-w-[400px] h-50 z-20"
             />
             <Image 
-              src={'/person/w-img.jpg'}
+              src="/person/w-img.jpg"
               alt="Artia Audrian Aryatama"
               width={1000}
               height={1000}
               draggable={false}
-              loading='lazy'
-              className="absolute left-0 bottom-0 object-cover object-[45%_95%] w-100 h-34 grayscale z-10"
+              loading="lazy"
+              className="absolute left-0 bottom-0 object-cover object-[45%_95%] 
+                        w-2/3 max-w-[300px] h-30 grayscale z-10"
             />
-            
-            
           </div>
+
           <div className="w-3/5">
-            <h1 className="font-space-grotesk font-bold 
-              text-7xl leading-17
+            <h1 className="font-space-grotesk font-bold text-left
+              lg:text-5xl lg:leading-13
+              xl:text-6xl xl:leading-15
+              2xl:text-7xl 2xl:leading-17
             ">
               Hi, I&apos;m <span className="text-primary">Artia</span> Audrian Aryatama Frontend Web Developer
             </h1>
 
             <p className="font-figtree 
               text-lg leading-6
-              mt-10 mb-3
+              lg:mt-7
+              2xl:mt-10 mb-3
               ">
               From Makassar, Indonesia, I craft purposeful web products that bring ideas to life. Driven by a passion to keep learning and connect design with purpose.  
             </p>
@@ -63,7 +67,7 @@ export default function HomeHero() {
 
         <div className="flex lg:hidden
           flex-col gap-6 items-center
-          xs:mt-18
+          xs:mt-20
         ">
           <Image 
             src={'/person/w-img.jpg'}
@@ -75,6 +79,7 @@ export default function HomeHero() {
             className="object-cover 
             w-full h-[242px]
             xs:w-40 xs:h-40 
+            md:w-120 md:h-56
             "
           />
           <div className="layout-gap ">
@@ -82,12 +87,12 @@ export default function HomeHero() {
             <h1 className="font-space-grotesk 
               text-4xl font-bold leading-[38px]
             ">
-              Hi, I&apos;m Artia Audrian Aryatama Frontend Web Developer
+              Hi, I&apos;m <span className="text-primary">Artia</span> Audrian Aryatama Frontend Web Developer
             </h1>
 
             <p className="font-figtree 
               text-sm leading-5 
-              mt-5 mb-3">
+              mt-7 mb-2">
               From Makassar, Indonesia, I craft purposeful web products that bring ideas to life. Driven by a passion to keep learning and connect design with purpose.  
             </p>
 
@@ -107,7 +112,7 @@ export default function HomeHero() {
 
       </div>
 
-      <div className="mt-10 lg:mt-12">
+      <div className="mt-10 lg:mt-16">
         <MarqueeImg />
       </div>
 
