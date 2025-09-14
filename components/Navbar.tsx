@@ -49,7 +49,7 @@ export default function Navbar() {
             ${hidden ? "-translate-x-full opacity-0" : "translate-x-0 opacity-100"}
           `}
         >
-          <div className="font-bold leading-[14px] lg:leading-4">
+          <div className="font-bold leading-[14px] text-base lg:leading-4">
             <Link href={'/'}>
               {/* <Image 
                 src={'/meta-icons/logo.png'}
@@ -75,7 +75,7 @@ export default function Navbar() {
           <Button
             size={'nopady'}
             variant={'link'}
-            className={`${currentPath === '/' ? 'font-bold underline underline-offset-2 ' : ''} lg:text-lg text-sm`}
+            className={`${currentPath === '/' ? 'font-bold underline underline-offset-2 ' : ''} lg:text-base text-sm`}
           >
             <Link href={{ pathname: "/" }}>
               HOME
@@ -84,7 +84,7 @@ export default function Navbar() {
           <Button
             size={'nopady'}
             variant={'link'}
-            className={`${currentPath === '/experience' ? 'font-bold underline underline-offset-2 lg:text-lg ' : ''} lg:text-lg text-sm`}
+            className={`${currentPath === '/experience' ? 'font-bold underline underline-offset-2 ' : ''} lg:text-base text-sm`}
           >
             <Link href={{ pathname: "/experience" }}>
               EXPERIENCE

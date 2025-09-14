@@ -6,16 +6,15 @@ export default function Graduate(){
     flex flex-col gap-6 items-left 
    ">
     
-    <div className="flex  gap-2 relative ">
+    <div className="flex  gap-2 relative h-20">
       <div className="">
         <h3 className="font-space-grotesk
           text-4xl font-bold leading-[38px]
-          lg:text-6xl lg:leading-16
         ">July <span className="block ">2025</span></h3>  
       </div> 
 
       <div className=" relative w-16">
-        <span className="absolute -top-1 -left-4 rotate-8 text-6xl lg:text-8xl">
+        <span className="absolute -top-1 -left-4 rotate-8 text-6xl ">
           🎓
         </span>
       </div>

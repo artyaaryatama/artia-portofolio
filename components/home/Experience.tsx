@@ -1,8 +1,5 @@
 import ProjectBox from "../ProjectsBox"
-import { MoveRight } from "lucide-react"
 import { projectsFreelances } from "@/lib/projectsFreelances"
-import { Button } from "../ui/button"
-import Link from "next/link"
 
 export default function Experience(){
   return(

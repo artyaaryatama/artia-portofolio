@@ -8,10 +8,9 @@ export default function About(){
     <div className="
       flex flex-col gap-6 items-left
     ">
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 h-20">
         <h2 className=" font-space-grotesk
           text-4xl font-bold leading-[38px]
-          lg:text-6xl lg:leading-16
         ">
           About 
         </h2>
@@ -19,7 +18,6 @@ export default function About(){
         <div className="bg-primary px-3 py-2 -rotate-4 rounded-sm">
           <h2 className=" font-space-grotesk
             text-[26px] font-bold leading-[38px] 
-            lg:text-[48px]
           ">Me</h2>
         </div>
       </div>

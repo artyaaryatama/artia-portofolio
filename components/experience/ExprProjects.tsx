@@ -24,9 +24,13 @@ export default function ExprProjects({projectsData, projectTitle}:projects){
         <h5 className="
           font-space-grotesk
           text-4xl font-bold leading-[38px]
+          
         ">{projectTitle}</h5>
 
-        <div className="flex flex-col gap-14 mt-6">
+        <div className="mt-6
+        grid grid-cols-1 gap-10
+        
+        ">
           {
             projectsData.length > 0 && 
             projectsData.map((data, key) => (

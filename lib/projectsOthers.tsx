@@ -4,7 +4,7 @@ export const projectsOthers = [
     alt: 'My Portofolio Sites',
     name: '',
     duration: 'Agustus 2025 - Present',
-    description: "I designed and developed this portfolio website using TypeScript and Next.js. It serves as a space where I showcase both my professional projects and the work I've built together with teams.",
+    description: "I designed and developed this (my) portfolio website using TypeScript and Next.js. This website serves as a space for me to showcase both my professional projects and the work I've built together with teams.",
     tags: [ 'Typescript', 'NextJs', 'TailwindCSS', 'Marquee'],
     linkRepo: "https://github.com/artyaaryatama/artia-portofolio.git",
     linkProd: "https://artia-space.vercel.app",
