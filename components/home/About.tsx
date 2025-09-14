@@ -1,14 +1,13 @@
 import { Button } from "../ui/button"
-import Link from "next/link"
 import { MoveRight } from "lucide-react"
 
 export default function About(){
 
   return (
-    <div className="layout-gap 
+    <div className="
       flex flex-col gap-6 items-left
     ">
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 lg:h-20">
         <h2 className=" font-space-grotesk
           text-4xl font-bold leading-[38px]
         ">
@@ -25,8 +24,9 @@ export default function About(){
       <div>
         <p className="font-figtree text-left 
           text-sm leading-5 
+          lg:text-base lg:leading-6
         ">
-          As a Jr. frontend developer, I&apos;ve worked with VanillaJS, jQuery, React, Next.js, and TailwindCSS to create functional web projects. By building reusable components and working with API integration, I bridge design and development to deliver seamless, pixel-perfect applications.
+          As a frontend developer, I&apos;ve worked with React, Next.js, TailwindCSS, and other modern frameworks to build responsive and user-friendly web applications. My work bridges design and development, focusing on clean, reusable code and smooth user experiences.
         </p>
       </div>
 
@@ -37,13 +37,14 @@ export default function About(){
             text-sm border-2 border-primary font-semibold
           "
         >
-          <Link
-            href={'/'}
+          <a
+            href={'/artia-cv.pdf'}
+            target="_blank" rel="noopener noreferrer"
             className="flex items-center gap-2"
           >
             Resume 
             <MoveRight className="w-4 h-2" />
-          </Link>
+          </a>
         </Button>
       </div>
     </div>

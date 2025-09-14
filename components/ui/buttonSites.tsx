@@ -17,8 +17,9 @@ export default function BtnSites({ link, className }: BtnSitesProps) {
       className={className}
     >
       <Button 
-        className=" border-foreground bg-foreground text-background hover:text-primary hover:bg-foreground hover:font-semibold border-2 
-        text-sm w-full hover:cursor-pointer 
+        className=" border-foreground bg-muted text-background hover:text-primary hover:bg-foreground hover:font-semibold border-2 
+        w-full hover:cursor-pointer 
+        text-sm md:text-xs lg:text-base
       ">
         <Sticker/>
         Check the sites!

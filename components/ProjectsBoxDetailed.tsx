@@ -1,4 +1,3 @@
-import Link from "next/link"
 import Image from "next/image"
 import BtnSourceCode from "./ui/buttonSourceCode"
 import BtnSites from "./ui/buttonSites"
@@ -19,15 +18,14 @@ export default function ProjectBoxDetailed(
 ){
   return(
     <div className="font-figtree w-full">
-      <div>
-        <div className="w-full h-50 bg-primary border-6 border-foreground 
-
-        ">
-          <div className="custom-border w-full h-full flex items-center justify-center">
-            <Link 
-              href={'/experience'}
-              className="underline underline-offset-2 flex items-center gap-2"
-            >
+      <div className="md:flex md:flex-row-reverse md:gap-10">
+        
+        {/* image */}
+        <div className="md:w-2/5">
+         <div className="w-full h-50 bg-primary border-6 border-foreground 
+          ">
+            <div className="custom-border w-full h-full flex items-center justify-center
+            ">
               <Image 
                 src={imgSrc}
                 alt={imgAlt}
@@ -36,25 +34,61 @@ export default function ProjectBoxDetailed(
                 height={700}
                 loading='lazy'
                 className="
-                w-full h-40 
+                w-80 h-40 
+                px-3
                 object-cover grayscale hover:grayscale-0 rounded-xs"
               />
-            </Link>
+            </div>
+
+          </div>
+
+          <div className="md:flex mt-3 hidden">
+            <ul className="flex gap-2 flex-wrap">
+              {tags.map((tag, idx) => (
+                <li key={idx} className=" text-xs bg-greyish px-2 py-1 rounded">
+                  {tag}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="md:grid grid-cols-2 gap-3 items-center mt-4 hidden
+          ">
+            {
+              linkRepo !== '' && (
+                <BtnSourceCode
+                  link={linkRepo}
+                  className={`${linkProd? 'col-span-1' : 'col-span-2 ' }`}
+                  />
+                )
+              }
+            {
+              linkProd !== '' && (
+                <BtnSites
+                link={linkProd} 
+                className={`${linkRepo? 'col-span-1' : 'col-span-2 ' }`}
+                />
+              )
+            }
+
           </div>
         </div>
 
-        <div>
-          <div className="flex flex-col items-start justify-center gap-1 
-            my-2 px-1
+        {/* text */}
+        <div className="md:w-3/5">
+          <div className="flex flex-col items-start justify-center gap-1 px-1
           ">
             <p className="text-left text-primary 
-              text-md
+              text-md mt-3 
+              md:mt-0
             ">{duration}</p>
+
             <p className="text-left text-wrap
-              text-md leading-5 font-semibold my-1
+              text-md leading-5 font-semibold mt-1
+              lg:text-base lg:leading-6
             ">{imgAlt} {projectName !== '' && ` | ${projectName}`} </p>
 
-            <div className="flex my-1">
+            <div className="flex mt-2 md:hidden">
               <ul className="flex gap-2 flex-wrap">
                 {tags.map((tag, idx) => (
                   <li key={idx} className=" text-xs bg-greyish px-2 py-1 rounded">
@@ -63,11 +97,17 @@ export default function ProjectBoxDetailed(
                 ))}
               </ul>
             </div>
+
             <p className="text-left text-wrap
-              text-md leading-5
+              text-sm leading-5 
+              lg:text-base lg:leading-6
+              mt-4 md:mt-2
             ">{description}</p>
           </div>
-          <div className="grid grid-cols-2 gap-3 items-center mt-3 px-1">
+
+          <div className="grid grid-cols-2 gap-3 items-center mt-3 px-1 md:hidden
+          
+          ">
             {
               linkRepo !== '' && (
                 <BtnSourceCode

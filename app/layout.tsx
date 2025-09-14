@@ -39,13 +39,14 @@ export const metadata: Metadata = {
     { rel: "manifest", url: "/meta-icons/manifest.json" },
     { rel: "msapplication-TileImage", url: "/meta-icons/ms-icon-144x144.png" }
   ],
+  metadataBase: new URL('https://artyaaryatama.me'),
   other: {
     "msapplication-TileColor": "#ffffff",
   },
   openGraph: {
     title: "Artia Aryatama | Frontend Web Developer",
     description: "Discover my portfolio, featuring a range of completed web projects.",
-    // url: 'https://artia-space.vercel.app',
+    url: 'https://artyaaryatama.me',
     siteName: "Artia Aryatama | Frontend Web Developer",
     images: [
       {

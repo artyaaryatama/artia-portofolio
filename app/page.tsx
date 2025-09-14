@@ -13,7 +13,9 @@ export default function Home() {
       <HomeHero />
       <div className="
         flex flex-col 
-        gap-12
+        gap-12 
+        lg:flex-row
+        layout-gap
       ">
         <About />
         <Graduate />
