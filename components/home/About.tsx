@@ -1,5 +1,4 @@
 import { Button } from "../ui/button"
-import Link from "next/link"
 import { MoveRight } from "lucide-react"
 
 export default function About(){

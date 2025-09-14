@@ -1,8 +1,5 @@
 import ProjectBox from "../ProjectsBox"
-import { MoveRight } from "lucide-react"
 import { projectsOthers } from "@/lib/projectsOthers"
-import { Button } from "../ui/button"
-import Link from "next/link"
 
 export default function ProjectVault(){
   return(
