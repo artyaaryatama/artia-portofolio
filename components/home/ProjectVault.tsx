@@ -18,7 +18,7 @@ export default function ProjectVault(){
         text-sm leading-5 
         lg:text-base lg:leading-6
       ">
-       A curated archive of my projects, from collaborations to experiments and side creations, each marking a step in my journey.
+       A curated archive of my projects, from collaborative work to personal builds, each representing a milestone in my development journey.
       </p>
 
       <div className="

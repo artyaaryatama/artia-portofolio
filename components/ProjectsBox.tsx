@@ -16,38 +16,39 @@ export default function ProjectBox(
       {
         imgSrc !== 'none' ? 
         <div>
-          <div className="w-full lg:w-85 h-40 bg-primary border-6 border-foreground 
+          <Link 
+            href={'/experience'}
+            className="group"
+          >
+            <div className="w-full lg:w-85 h-40 bg-primary border-6 border-foreground 
 
-          ">
-            <div className="custom-border w-full h-full flex items-center justify-center">
-              <Link 
-                href={'/experience'}
-                className="underline underline-offset-2 flex items-center gap-2"
-              >
-                <Image 
-                  src={imgSrc}
-                  alt={imgAlt}
-                  draggable={false}
-                  width={700}
-                  height={700}
-                  loading='lazy'
-                  className="w-54 h-30 object-cover grayscale hover:grayscale-0 rounded-xs"
-                />
-              </Link>
+            ">
+              <div className="custom-border w-full h-full flex items-center justify-center">
+                  <Image 
+                    src={imgSrc}
+                    alt={imgAlt}
+                    draggable={false}
+                    width={700}
+                    height={700}
+                    loading='lazy'
+                    className="w-64 px-2 h-30 object-cover grayscale hover:grayscale-0 rounded-xs"
+                  />
+                
+              </div>
             </div>
-          </div>
 
-          <div className="flex flex-col items-start justify-center gap-1 
-            mt-3 mb-2 px-1
-            lg:items-center lg:mt-2 lg:mb-0
-          ">
-            <p className="text-left text-primary 
-              text-xs md:text-sm lg:text-center
-            ">{duration}</p>
-            <p className="text-left text-wrap
-              text-sm lg:text-md leading-5 lg:text-center
-            ">{imgAlt} {projectName !== '' && ` | ${projectName}`}</p>
-          </div>
+            <div className="flex flex-col items-start justify-center gap-1 
+              mt-3 mb-2 px-1
+              lg:items-center lg:mt-2 lg:mb-0 
+            ">
+              <p className="text-left text-primary 
+                text-xs md:text-sm lg:text-center
+              ">{duration}</p>
+              <p className="text-left text-wrap
+                text-sm lg:text-md leading-5 lg:text-center group-hover:underline underline-offset-3 
+              ">{imgAlt} {projectName !== '' && ` | ${projectName}`}</p>
+            </div>
+          </Link>
         </div>
         : 
         <div className="w-full md:w-65 h-40 bg-primary border-6 border-foreground 

@@ -137,21 +137,17 @@ body{
 }
 
 .layout-gap{
-  padding-right: clamp(0.6rem, 8vw, 10rem);
-  padding-left: clamp(0.6rem, 8vw, 10rem);
+  padding-right: clamp(0.6rem, 9vw, 10rem);
+  padding-left: clamp(0.6rem, 9vw, 10rem);
 }
 
-@media (max-width: 1090px) {
-  .layout-width {
-    padding: 0 40px;
+@media (min-width: 1220px) {
+  .layout-gap {
+    padding-right: 14rem;
+    padding-left: 14rem; 
   }
 }
 
-@media (max-width: 900px) {
-  .layout-width {
-    padding: 0 30px;
-  }
-}
 
 .custom-border{
   border-top: 4px solid var(--background); 

@@ -15,7 +15,7 @@ export default function Experience(){
         text-sm leading-5 
         lg:text-base lg:leading-6
       ">
-        1.5+ years of freelance experience, developing landing pages, web applications tailored to client needs.
+        Over 1.5 years of experience developing landing pages and web applications across different use cases.
       </p>
 
       {/* scrolled   

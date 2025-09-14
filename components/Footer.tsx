@@ -12,7 +12,8 @@ export default function Footer() {
           <h3 className="
               font-space-grotesk font-bold 
               leading-[38px] text-4xl
-              lg:text-6xl lg:leading-16
+              lg:text-5xl lg:leading-13
+              xl:text-6xl xl:leading-15
             "
           >
             Design Meets
@@ -29,7 +30,7 @@ export default function Footer() {
         <p className="font-figtree text-sm leading-5
           lg:text-base lg:leading-6 lg:w-170
         ">
-          Currently open to new opportunities in freelance, contract, or full-time positions. If you&apos;re looking for a frontend developer who bridges design and development, <span className="underline underline-offset-2  font-bold">let&apos;s build something great together.</span>
+          Currently open to new opportunities in freelance, contract, or full-time positions. Looking for someone to turn designs into seamless web experiences? <span className="underline underline-offset-2 font-semibold">Let&apos;s make it happen.</span>
         </p>
 
         <div className="

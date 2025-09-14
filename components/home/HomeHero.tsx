@@ -48,7 +48,7 @@ export default function HomeHero() {
               lg:mt-7
               2xl:mt-10 mb-3
               ">
-              From Makassar, Indonesia, I craft purposeful web products that bring ideas to life. Driven by a passion to keep learning and connect design with purpose.  
+              From Makassar, Indonesia, I craft purposeful web products that bring ideas to life. Detail-oriented, I refine the small things that shape a smoother overall experience.
             </p>
 
             <div className=" flex gap-3 pl-1

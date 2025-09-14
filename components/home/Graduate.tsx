@@ -6,7 +6,7 @@ export default function Graduate(){
     flex flex-col gap-6 items-left 
    ">
     
-    <div className="flex  gap-2 relative h-20">
+    <div className="flex  gap-2 relative lg:h-20">
       <div className="">
         <h3 className="font-space-grotesk
           text-4xl font-bold leading-[38px]
