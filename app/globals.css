@@ -19,6 +19,7 @@
   --radius-xl: calc(var(--radius) + 4px); 
 
   --breakpoint-xs: 24rem;
+  --breakpoint-xxl: 90rem;
   
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -141,7 +142,7 @@ body{
   padding-left: clamp(0.6rem, 9vw, 10rem);
 }
 
-@media (min-width: 1220px) {
+@media (min-width: 1280px) {
   .layout-gap {
     padding-right: 14rem;
     padding-left: 14rem; 
