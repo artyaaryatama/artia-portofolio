@@ -10,11 +10,11 @@ export default function Footer() {
         flex flex-col gap-6 text-background ">
         <div className="flex items-start lg:ml-24">
           <h3 className="
-              font-space-grotesk font-bold 
-              leading-[38px] text-4xl
-              lg:text-5xl lg:leading-13
-              xl:text-6xl xl:leading-15
-            "
+            font-space-grotesk font-bold 
+            leading-[38px] text-3xl sm:text-4xl
+            lg:text-5xl lg:leading-13
+            xl:text-6xl xl:leading-15
+          "
           >
             Design Meets
             <span className="block">
@@ -40,7 +40,7 @@ export default function Footer() {
           ">
 
           <div className="
-            flex justify-start gap-3 items-end
+            flex justify-start gap-5 items-end
             lg:flex-row-reverse
             ">
             <div className="border-4 border-primary w-[90px] h-[90px]">

@@ -41,15 +41,15 @@ export default function HomeHero() {
               className="
               font-space-grotesk font-bold text-left
               lg:text-5xl lg:leading-13
-              xl:text-6xl xl:leading-15
-              2xl:text-7xl 2xl:leading-17
+              xl:text-[3.2rem] xl:leading-14
+              xxl:text-7xl xxl:leading-17
               "
             />
 
             <p className="font-figtree 
               text-lg leading-6
               lg:mt-7
-              2xl:mt-10 mb-3
+              xxl:mt-10 mb-3
               ">
               From Makassar, Indonesia, I craft purposeful web products that bring ideas to life. Detail-oriented, I refine the small things that shape a smoother overall experience.
             </p>
@@ -95,7 +95,7 @@ export default function HomeHero() {
 
             <p className="font-figtree 
               text-sm leading-5 
-              mt-7 mb-2">
+              mt-5 mb-2">
               From Makassar, Indonesia, I craft purposeful web products that bring ideas to life. Driven by a passion to keep learning and connect design with purpose.  
             </p>
 
