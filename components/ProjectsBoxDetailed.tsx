@@ -34,13 +34,12 @@ export default function ProjectBoxDetailed(
                 height={700}
                 loading='lazy'
                 className="
-                w-full h-40 
+                w-80 h-40 
                 px-3
                 object-cover grayscale hover:grayscale-0 rounded-xs"
               />
             </div>
 
-            
           </div>
 
           <div className="md:flex mt-3 hidden">
