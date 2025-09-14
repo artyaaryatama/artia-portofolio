@@ -1,5 +1,6 @@
 import Image from "next/image";
 import MarqueeImg from "../MarqueeImg";
+import TextGenerateEffect from "../ui/typewriter";
 
 export default function HomeHero() {
   return (
@@ -35,13 +36,15 @@ export default function HomeHero() {
           </div>
 
           <div className="w-3/5">
-            <h1 className="font-space-grotesk font-bold text-left
+            <TextGenerateEffect 
+              words="Hi, I'm Artia Audrian Aryatama Frontend Web Developer"
+              className="
+              font-space-grotesk font-bold text-left
               lg:text-5xl lg:leading-13
               xl:text-6xl xl:leading-15
               2xl:text-7xl 2xl:leading-17
-            ">
-              Hi, I&apos;m <span className="text-primary">Artia</span> Audrian Aryatama Frontend Web Developer
-            </h1>
+              "
+            />
 
             <p className="font-figtree 
               text-lg leading-6
