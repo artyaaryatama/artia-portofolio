@@ -7,9 +7,8 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(false);
-      setTimeout(() => {
-        onComplete();
-      }, 1300);
+      // Call onComplete immediately when animation starts
+      onComplete();
     }, 3000);
 
     return () => clearTimeout(timer);
@@ -21,7 +20,7 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
         <motion.div
           initial={{ y: 0 }}
           exit={{ y: "-100%" }}
-          transition={{ duration: 1, ease: "easeInOut" }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
           className="fixed inset-0 z-50 flex items-center justify-center bg-background/80 backdrop-filter backdrop-blur-xl"
         >
           <motion.div
