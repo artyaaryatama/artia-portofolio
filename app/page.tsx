@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="
       flex flex-col 
-      gap-12
+      gap-12 min-xxxl:w-[70vw] min-lg:w-[74vw] w-full 
     ">
       <HomeHero />
       <div className="

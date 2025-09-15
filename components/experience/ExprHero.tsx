@@ -4,7 +4,7 @@ export default function ExprHero(){
     mt-22 lg:mt-24">
       <h1 className="font-space-grotesk text-left
       text-4xl leading-[38px] font-bold
-      lg:text-5xl lg:leading-13
+      md:text-[3rem] md:leading-13
       xl:text-6xl xl:leading-15
       2xl:text-7xl 2xl:leading-17
       ">What I&apos;ve built along the way.</h1>

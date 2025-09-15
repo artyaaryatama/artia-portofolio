@@ -18,15 +18,10 @@ export default function Experience(){
         Over 1.5 years of experience developing landing pages and web applications across different use cases.
       </p>
 
-      {/* scrolled   
-        flex items-start gap-3 overflow-x-auto w-full 
-        pb-5
-        scrollbar-thin scrollbar-thumb-gray-400
-      */}
       <div className="
         scrollbar-thin scrollbar-thumb-gray-400
         mt-4
-        grid gap-3 grid-cols-1 sm:grid-cols-2
+        grid gap-5 grid-cols-1 sm:grid-cols-2 sm:gap-3
         lg:flex lg:pb-5 lg:flex-row lg:overflow-x-auto lg:items-start
       ">
         {

@@ -10,9 +10,9 @@ export default function HomeHero() {
       ">
         
         <div className="hidden lg:flex layout-gap
-          flex-row gap-10 items-center
+          flex-row gap-10 items-center 
         ">
-          <div className="w-2/5 h-66 relative">
+          <div className="w-2/5 h-66 xxxl:h-76 relative ">
             <Image 
               src="/person/w-img.jpg"
               alt="Artia Audrian Aryatama"
@@ -21,7 +21,9 @@ export default function HomeHero() {
               draggable={false}
               loading="lazy"
               className="absolute top-0 right-0 object-cover object-[45%_50%] 
-                        w-3/4 max-w-[400px] h-50 z-20"
+                        w-3/4 max-w-[700px] h-50 xxxl:h-56 z-20
+                        
+                        "
             />
             <Image 
               src="/person/w-img.jpg"
@@ -31,7 +33,7 @@ export default function HomeHero() {
               draggable={false}
               loading="lazy"
               className="absolute left-0 bottom-0 object-cover object-[45%_95%] 
-                        w-2/3 max-w-[300px] h-30 grayscale z-10"
+                        w-2/3 max-w-[500px] h-30 xxxl:h-46 grayscale z-10"
             />
           </div>
 
@@ -42,7 +44,7 @@ export default function HomeHero() {
               font-space-grotesk font-bold text-left
               lg:text-5xl lg:leading-13
               xl:text-[3.2rem] xl:leading-14
-              xxl:text-7xl xxl:leading-17
+              xxxl:text-7xl xxxl:leading-17
               "
             />
 
@@ -82,7 +84,8 @@ export default function HomeHero() {
             className="object-cover 
             w-full h-[242px]
             xs:w-40 xs:h-40 
-            md:w-120 md:h-56
+            sm:w-[60vw] sm:h-60
+            md:w-[65vw] 
             "
           />
           <div className="layout-gap ">

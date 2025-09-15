@@ -19,7 +19,9 @@
   --radius-xl: calc(var(--radius) + 4px); 
 
   --breakpoint-xs: 24rem;
+  --breakpoint-xss: 27rem;
   --breakpoint-xxl: 90rem;
+  --breakpoint-xxxl: 100rem;
   
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -138,17 +140,16 @@ body{
 }
 
 .layout-gap{
-  padding-right: clamp(0.6rem, 9vw, 10rem);
-  padding-left: clamp(0.6rem, 9vw, 10rem);
+  padding-right: clamp(2rem, 2vw, 10rem);
+  padding-left: clamp(2rem, 2vw, 10rem);
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .layout-gap {
-    padding-right: 14rem;
-    padding-left: 14rem; 
+    padding-right: 2vw;
+    padding-left: 2vw; 
   }
 }
-
 
 .custom-border{
   border-top: 4px solid var(--background); 

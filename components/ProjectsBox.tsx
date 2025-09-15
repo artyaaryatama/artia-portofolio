@@ -12,28 +12,27 @@ export default function ProjectBox(
   {imgSrc, imgAlt, projectName, duration} : project
 ){
   return(
-    <div className="font-figtree w-full lg:w-85">
+    <div className="font-figtree w-full lg:w-85 ">
       {
         imgSrc !== 'none' ? 
         <div>
           <Link 
             href={'/experience'}
-            className="group"
+            className=""
           >
-            <div className="w-full lg:w-85 h-40 bg-primary border-6 border-foreground 
+            <div className="w-full lg:w-85 h-40 bg-primary border-6 border-foreground  group
 
             ">
               <div className="custom-border w-full h-full flex items-center justify-center">
-                  <Image 
-                    src={imgSrc}
-                    alt={imgAlt}
-                    draggable={false}
-                    width={700}
-                    height={700}
-                    loading='lazy'
-                    className="w-64 px-2 h-30 object-cover grayscale hover:grayscale-0 rounded-xs"
-                  />
-                
+                <Image 
+                  src={imgSrc}
+                  alt={imgAlt}
+                  draggable={false}
+                  width={700}
+                  height={700}
+                  loading='lazy'
+                  className="w-64 px-2 h-30 object-cover lg:grayscale group-hover:grayscale-0 rounded-xs"
+                />
               </div>
             </div>
 

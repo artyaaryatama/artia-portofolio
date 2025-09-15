@@ -22,7 +22,7 @@ export default function ProjectBoxDetailed(
         
         {/* image */}
         <div className="md:w-2/5">
-         <div className="w-full h-50 bg-primary border-6 border-foreground 
+         <div className="w-full h-50 bg-primary border-6 border-foreground group
           ">
             <div className="custom-border w-full h-full flex items-center justify-center
             ">
@@ -36,7 +36,7 @@ export default function ProjectBoxDetailed(
                 className="
                 w-80 h-40 
                 px-3
-                object-cover grayscale hover:grayscale-0 rounded-xs"
+                object-cover lg:grayscale group-hover:grayscale-0 rounded-xs"
               />
             </div>
 

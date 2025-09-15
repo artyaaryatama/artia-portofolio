@@ -4,22 +4,24 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="
-      bg-muted pt-10
+      bg-muted pt-10 flex flex-col items-center
     ">
       <div className="layout-gap mb-10
-        flex flex-col gap-6 text-background ">
-        <div className="flex items-start lg:ml-24">
+        flex flex-col gap-6 text-background min-xxxl:w-[70vw] min-lg:w-[74vw] w-full">
+        <div className="flex items-start xl:ml-24">
           <h3 className="
             font-space-grotesk font-bold 
-            leading-[38px] text-3xl sm:text-4xl
-            lg:text-5xl lg:leading-13
+            leading-[36px] text-3xl xss:text-4xl
+            md:text-5xl md:leading-13
             xl:text-6xl xl:leading-15
           "
           >
             Design Meets
             <span className="block">
               Development Here
-              <span className="relative inline-flex size-2 ml-[10px] mt-2 align-middle">
+              <span className="relative inline-flex size-2 ml-[10px] align-middle
+                mt-1 md:mt-2
+              ">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-75"></span>
                 <span className="relative inline-flex size-2 rounded-full bg-primary"></span>
               </span>
@@ -30,7 +32,7 @@ export default function Footer() {
         <p className="font-figtree text-sm leading-5
           lg:text-base lg:leading-6 lg:w-170
         ">
-          Currently open to new opportunities in freelance, contract, or full-time positions. Looking for someone to turn designs into seamless web experiences? <span className="underline underline-offset-2 font-semibold">Let&apos;s make it happen.</span>
+          Currently open to new opportunities in freelance, contract, or full-time positions. Looking for someone to turn designs into seamless web experiences? <span className="text-primary font-bold">Let&apos;s build together!</span>
         </p>
 
         <div className="
@@ -40,7 +42,7 @@ export default function Footer() {
           ">
 
           <div className="
-            flex justify-start gap-5 items-end
+            flex justify-start gap-4 items-end
             lg:flex-row-reverse
             ">
             <div className="border-4 border-primary w-[90px] h-[90px]">
@@ -103,22 +105,25 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-
-        
-          
         </div>
       </div>
 
-      <div className="bg-primary font-space-grotesk py-5 flex flex-col layout-gap">
-        <p className=" text-background
-        text-left text-sm lg:text-base lg:leading-6
-        ">@ <span className="block">2025</span></p>
-        <p className="text-background font-semibold text-2xl
-          text-right leading-[28px]
-        "
-         >
-          ARTIA AUDRIAN ARYATAMA
-        </p>
+      <div className="bg-primary font-space-grotesk py-3 layout-gap
+        min-xxxl:w-[70vw] min-lg:w-[74vw] w-full
+      ">
+        <div className="flex flex-col gap-2 lg:flex-row lg:justify-between lg:items-end">
+          <p className=" text-background
+          text-left text-sm lg:text-base lg:leading-6
+          ">@ <span className="block">2025</span></p>
+
+          <p className="text-background font-semibold text-2xl
+            text-right leading-[28px]
+          "
+          >
+            ARTIA AUDRIAN ARYATAMA
+          </p>
+
+        </div>
       </div>
     </footer>
   )
