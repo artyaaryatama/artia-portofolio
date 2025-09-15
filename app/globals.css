@@ -19,6 +19,7 @@
   --radius-xl: calc(var(--radius) + 4px); 
 
   --breakpoint-xs: 24rem;
+  --breakpoint-xss: 27rem;
   --breakpoint-xxl: 90rem;
   
   --color-sidebar-ring: var(--sidebar-ring);
