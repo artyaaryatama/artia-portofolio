@@ -17,8 +17,8 @@ const figtree = Figtree({
 })
 
 export const metadata: Metadata = {
-  title: "Artia Aryatama | Frontend Web Developer",
-  description: "Discover my portfolio, featuring a range of completed web projects.",
+  title: "Artia Aryatama | Frontend Developer",
+  description: "A collection of my work as a frontend developer, from landing pages to web applications.",
   icons: [
     { rel: "icon", url: "/meta-icons/favicon-16x16.png", sizes: "16x16", type: "image/png" },
     { rel: "icon", url: "/meta-icons/favicon-32x32.png", sizes: "32x32", type: "image/png" },
@@ -44,16 +44,16 @@ export const metadata: Metadata = {
     "msapplication-TileColor": "#ffffff",
   },
   openGraph: {
-    title: "Artia Aryatama | Frontend Web Developer",
-    description: "Discover my portfolio, featuring a range of completed web projects.",
+    title: "Artia Aryatama | Frontend Developer",
+    description: "A collection of my work as a frontend developer, from landing pages to web applications.",
     url: 'https://artyaaryatama.me',
-    siteName: "Artia Aryatama | Frontend Web Developer",
+    siteName: "Artia Aryatama | Frontend Developer",
     images: [
       {
-        url: "/meta-icons/og1.png",
+        url: "/meta-icons/og2.png",
         width: 1200,
         height: 630,
-        alt: "My Logo",
+        alt: "Artia Aryatama",
       },
     ],
     locale: "id_ID",
@@ -61,9 +61,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Artia Aryatama | Frontend Web Developer",
-    description: "Discover my portfolio, featuring a range of completed web projects.",
-    images: "/meta-icons/og1.png",
+    title: "Artia Aryatama | Frontend Developer",
+    description: "A collection of my work as a frontend developer, from landing pages to web applications.",
+    images: "/meta-icons/og2.png",
   },
 };
 
@@ -83,7 +83,7 @@ export default function RootLayout({
         `}
       >
         <Navbar />
-        <div className="mb-12">
+        <div className="mb-12 block min-lg:flex min-lg:items-center min-lg:flex-col">
           {children}
         </div>
         <Footer />

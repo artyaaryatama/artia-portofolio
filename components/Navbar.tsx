@@ -42,22 +42,17 @@ export default function Navbar() {
 
         <li
           className={`
+            w-32 min-xxxl:w-[14vw] min-lg:w-[12vw]
             text-sm lg:text-lg 
             bg-background/70 backdrop-filter backdrop-blur-sm
             py-3 px-5
             transition-all duration-700 ease-in-out
             ${hidden ? "-translate-x-full opacity-0" : "translate-x-0 opacity-100"}
+            flex justify-end
           `}
         >
-          <div className="font-bold leading-[14px] text-base lg:leading-4">
+          <div className="font-bold leading-[14px] text-base lg:leading-4 text-left">
             <Link href={'/'}>
-              {/* <Image 
-                src={'/meta-icons/logo.png'}
-                alt="logo"
-                width={600}
-                height={600}
-                className="w-10"
-              /> */}
               ARTIA <span className="block">PORTO—</span> <span>FOLIO</span>
             </Link>
           </div>
@@ -65,9 +60,11 @@ export default function Navbar() {
 
         <li
           className={`
+            w-32 min-xxxl:w-[14vw] min-lg:w-[12vw]
             flex flex-col gap-1
             py-3 px-5
-            bg-background/70 backdrop-filter backdrop-blur-sm
+            bg-background/70 backdrop-filter backdrop-blur-sm 
+            lg:text-lg 
             transition-all duration-700 ease-in-out
             ${hidden ? "translate-x-full opacity-0" : "translate-x-0 opacity-100"}
           `}
@@ -84,7 +81,7 @@ export default function Navbar() {
           <Button
             size={'nopady'}
             variant={'link'}
-            className={`${currentPath === '/experience' ? 'font-bold underline underline-offset-2 ' : ''} lg:text-base text-sm`}
+            className={`${currentPath === '/experience' ? 'font-bold underline underline-offset-2 ' : ''} lg:text-base text-sm `}
           >
             <Link href={{ pathname: "/experience" }}>
               EXPERIENCE

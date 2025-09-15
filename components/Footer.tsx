@@ -4,11 +4,11 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="
-      bg-muted pt-10
+      bg-muted pt-10 flex flex-col items-center
     ">
       <div className="layout-gap mb-10
-        flex flex-col gap-6 text-background ">
-        <div className="flex items-start lg:ml-24">
+        flex flex-col gap-6 text-background min-xxxl:w-[70vw] min-lg:w-[74vw] w-full">
+        <div className="flex items-start xl:ml-24">
           <h3 className="
             font-space-grotesk font-bold 
             leading-[36px] text-3xl xss:text-4xl
@@ -108,18 +108,22 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="bg-primary font-space-grotesk py-5 flex flex-col layout-gap
-        gap-2 xs:gap-0
+      <div className="bg-primary font-space-grotesk py-3 layout-gap
+        min-xxxl:w-[70vw] min-lg:w-[74vw] w-full
       ">
-        <p className=" text-background
-        text-left text-sm lg:text-base lg:leading-6
-        ">@ <span className="block">2025</span></p>
-        <p className="text-background font-semibold text-2xl
-          text-right leading-[28px]
-        "
-         >
-          ARTIA AUDRIAN ARYATAMA
-        </p>
+        <div className="flex flex-col gap-2 lg:flex-row lg:justify-between lg:items-end">
+          <p className=" text-background
+          text-left text-sm lg:text-base lg:leading-6
+          ">@ <span className="block">2025</span></p>
+
+          <p className="text-background font-semibold text-2xl
+            text-right leading-[28px]
+          "
+          >
+            ARTIA AUDRIAN ARYATAMA
+          </p>
+
+        </div>
       </div>
     </footer>
   )

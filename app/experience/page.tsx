@@ -8,7 +8,7 @@ export default function Page() {
   return (
     <div className="
       flex flex-col 
-      gap-12
+      gap-12 min-xxxl:w-[70vw] min-lg:w-[74vw] w-full 
     ">
       <ExprHero />
       <ExprProjects 
@@ -18,7 +18,7 @@ export default function Page() {
       <MarqueeText 
         text="Open to new projects! 🌎"
         styleContainer="bg-muted py-2"
-        styleText="text-primary text-2xl  font-figtree"
+        styleText="text-primary text-2xl font-figtree"
       />
       <ExprProjects 
         projectsData={projectsOthers}
