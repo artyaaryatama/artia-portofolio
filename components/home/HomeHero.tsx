@@ -2,13 +2,16 @@ import Image from "next/image";
 import MarqueeImg from "../MarqueeImg";
 import TextGenerateEffect from "../ui/typewriter";
 
-export default function HomeHero() {
+interface HomeHeroProps {
+  startTypewriter: boolean;
+}
+
+export default function HomeHero({ startTypewriter }: HomeHeroProps) {
   return (
     <div>
       <div className="
         lg:mt-30
       ">
-        
         <div className="hidden lg:flex layout-gap
           flex-row gap-10 items-center 
         ">
@@ -22,7 +25,6 @@ export default function HomeHero() {
               loading="lazy"
               className="absolute top-0 right-0 object-cover object-[45%_50%] 
                         w-3/4 max-w-[700px] h-50 xxxl:h-56 z-20
-                        
                         "
             />
             <Image 
@@ -40,6 +42,7 @@ export default function HomeHero() {
           <div className="w-3/5">
             <TextGenerateEffect 
               words="Hi, I'm Artia Audrian Aryatama Frontend Web Developer"
+              startAnimation={startTypewriter}
               className="
               font-space-grotesk font-bold text-left
               lg:text-5xl lg:leading-13
@@ -90,11 +93,14 @@ export default function HomeHero() {
           />
           <div className="layout-gap ">
             
-            <h1 className="font-space-grotesk 
+            <TextGenerateEffect 
+              words="Hi, I'm Artia Audrian Aryatama Frontend Web Developer"
+              startAnimation={startTypewriter}
+              className="
+              font-space-grotesk 
               text-4xl font-bold leading-[38px]
-            ">
-              Hi, I&apos;m <span className="text-primary">Artia</span> Audrian Aryatama Frontend Web Developer
-            </h1>
+              "
+            />
 
             <p className="font-figtree 
               text-sm leading-5 

@@ -6,9 +6,11 @@ import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 export default function TextGenerateEffect({
   words,
   className = "",
+  startAnimation = true,
 }: {
   words: string;
   className?: string;
+  startAnimation?: boolean;
 }) {
   const count = useMotionValue(0);
   const rounded = useTransform(count, (latest) => Math.round(latest));
@@ -17,13 +19,16 @@ export default function TextGenerateEffect({
   );
 
   useEffect(() => {
+    if (!startAnimation) return;
+
     const controls = animate(count, words.length, {
       type: "tween",
-      duration: 3.5, // Increased from 1 to 2.5 seconds
+      duration: 3.5,
       ease: "easeInOut",
     });
+    
     return controls.stop;
-  }, [words]);
+  }, [words, startAnimation]);
 
   return (
     <motion.span className={className}>
