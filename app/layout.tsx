@@ -75,7 +75,26 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="robots" content="noindex, nofollow" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Artia Aryatama",
+              "url": "https://artyaaryatama.me",
+              "sameAs": [
+                "https://github.com/artyaaryatama",
+                "https://www.linkedin.com/in/artia-aryatama"
+              ],
+              "jobTitle": "Frontend Developer",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Freelance"
+              }
+            }),
+          }}
+        />
       </head>
       <body
         className={`${spaceGrotesk.variable} ${figtree.variable} antialiased 
