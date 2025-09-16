@@ -30,10 +30,6 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 📄 Copyright & Usage
+## 📄 Copyright
 
 © 2025 Artia Aryatama. All rights reserved.
-
-## 🤝 Connect With Me
-- LinkedIn: [Artia Aryatama](https://linkedin.com/in/artyaaryatama)
-- Email: artyaaryatama21@gmail.com
