@@ -17,7 +17,7 @@ export default function BtnSourceCode({ link, className }: BtnSourceCodeProps) {
       className={className}
     >
       <Button 
-        className=" border-foreground  hover:font-semibold border-2 bg-muted text-background hover:bg-foreground hover:text-primary w-full hover:cursor-pointer 
+        className="hover:font-semibold border-2 bg-muted text-background hover:bg-foreground hover:text-primary w-full hover:cursor-pointer 
         text-sm md:text-xs xl:text-base
       ">
 

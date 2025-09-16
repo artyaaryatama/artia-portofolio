@@ -11,17 +11,14 @@ export default function Home() {
   const [startTypewriter, setStartTypewriter] = useState(false);
 
   useEffect(() => {
-    // Check if splash was shown for typewriter timing
     const hasVisited = sessionStorage.getItem('hasVisited');
     
     if (hasVisited) {
-      // If user has visited before, start typewriter immediately
       setStartTypewriter(true);
     } else {
-      // If first visit, wait for splash screen duration + buffer
       const timer = setTimeout(() => {
         setStartTypewriter(true);
-      }, 2900); // 3000ms splash + 1500ms transition buffer
+      }, 1970); 
 
       return () => clearTimeout(timer);
     }

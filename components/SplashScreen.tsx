@@ -7,9 +7,8 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(false);
-      // Call onComplete immediately when animation starts
       onComplete();
-    }, 3000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, [onComplete]);

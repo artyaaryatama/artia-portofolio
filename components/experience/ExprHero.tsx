@@ -13,7 +13,7 @@ export default function ExprHero(){
         text-sm leading-5 
         lg:text-base lg:leading-6
         mt-3">
-        This page showcases some of the work I&apos;ve done, highlighting my process and results.
+        This page shares the projects I&apos;ve worked on, including the stacks I used and my responsibilities in shaping them 👩‍💻
       </p>
     </div>
   )
