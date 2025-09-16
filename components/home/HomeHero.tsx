@@ -14,6 +14,7 @@ export default function HomeHero({ startTypewriter }: HomeHeroProps) {
       ">
         <div className="hidden lg:flex layout-gap
           flex-row gap-10 items-center 
+          xxxxl:gap-20
         ">
           <div className="w-2/5 h-66 xxxl:h-76 relative ">
             <Image 
@@ -45,7 +46,8 @@ export default function HomeHero({ startTypewriter }: HomeHeroProps) {
               startAnimation={startTypewriter}
               className="
               font-space-grotesk font-bold text-left
-              lg:text-5xl lg:leading-13
+              text-[40px] leading-11
+              llg:text-5xl llg:leading-13
               xl:text-[3.2rem] xl:leading-14
               xxxl:text-7xl xxxl:leading-17
               "
@@ -53,7 +55,8 @@ export default function HomeHero({ startTypewriter }: HomeHeroProps) {
 
             <p className="font-figtree 
               text-lg leading-6
-              lg:mt-7
+              mt-6
+              llg:mt-7
               xxl:mt-10 mb-3
               ">
               From Makassar, Indonesia, I craft purposeful web products that bring ideas to life. Detail-oriented, I refine the small things that shape a smoother overall experience.

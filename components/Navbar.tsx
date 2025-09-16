@@ -42,7 +42,7 @@ export default function Navbar() {
 
         <li
           className={`
-            w-fit min-xxxl:w-[14vw] min-lg:w-[12vw]
+            w-fit min-xxxl:w-[14vw] min-lg:w-[12vw] pl-navs
             text-sm lg:text-lg 
             bg-background/70 backdrop-filter backdrop-blur-sm
             py-3 px-5
@@ -62,11 +62,10 @@ export default function Navbar() {
 
         <li
           className={`
-            w-32 min-xxxl:w-[14vw] min-lg:w-[12vw]
+            w-32 min-xxxl:w-[14vw] min-lg:w-[12vw] pr-navs
             flex flex-col gap-1
             py-3 px-5
             bg-background/70 backdrop-filter backdrop-blur-sm
-            lg:text-lg 
             transition-all duration-700 ease-in-out
             ${hidden ? "translate-x-full opacity-0" : "translate-x-0 opacity-100"}
           `}
