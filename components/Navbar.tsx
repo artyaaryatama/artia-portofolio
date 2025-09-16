@@ -42,18 +42,20 @@ export default function Navbar() {
 
         <li
           className={`
-            w-32 min-xxxl:w-[14vw] min-lg:w-[12vw]
+            w-fit min-xxxl:w-[14vw] min-lg:w-[12vw]
             text-sm lg:text-lg 
             bg-background/70 backdrop-filter backdrop-blur-sm
             py-3 px-5
             transition-all duration-700 ease-in-out
             ${hidden ? "-translate-x-full opacity-0" : "translate-x-0 opacity-100"}
-            flex justify-end
+            flex lg:justify-end justify-start
           `}
         >
-          <div className="font-bold leading-[14px] text-base lg:leading-4 text-left">
+          <div className="font-bold leading-[14px] lg:leading-4 text-left
+            lg:text-base text-sm
+          ">
             <Link href={'/'}>
-              ARTIA <span className="block">PORTO—</span> <span>FOLIO</span>
+              ARTIA <span className="block">PORTO</span> <span>FOLIO</span>
             </Link>
           </div>
         </li>
@@ -63,7 +65,7 @@ export default function Navbar() {
             w-32 min-xxxl:w-[14vw] min-lg:w-[12vw]
             flex flex-col gap-1
             py-3 px-5
-            bg-background/70 backdrop-filter backdrop-blur-sm 
+            bg-background/70 backdrop-filter backdrop-blur-sm
             lg:text-lg 
             transition-all duration-700 ease-in-out
             ${hidden ? "translate-x-full opacity-0" : "translate-x-0 opacity-100"}

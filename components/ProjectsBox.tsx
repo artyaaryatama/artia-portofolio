@@ -31,7 +31,7 @@ export default function ProjectBox(
                   width={700}
                   height={700}
                   loading='lazy'
-                  className="w-64 px-2 h-30 object-cover lg:grayscale group-hover:grayscale-0 rounded-xs"
+                  className="w-64 px-2 h-30 object-contain lg:grayscale group-hover:grayscale-0 rounded-xs"
                 />
               </div>
             </div>

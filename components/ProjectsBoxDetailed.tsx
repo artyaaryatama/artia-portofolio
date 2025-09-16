@@ -21,7 +21,7 @@ export default function ProjectBoxDetailed(
       <div className="md:flex md:flex-row-reverse md:gap-10">
         
         {/* image */}
-        <div className="md:w-2/5">
+        <div className="md:w-2/5 bg-amber-100 xxxl:w-100">
          <div className="w-full h-50 bg-primary border-6 border-foreground group
           ">
             <div className="custom-border w-full h-full flex items-center justify-center
@@ -36,7 +36,7 @@ export default function ProjectBoxDetailed(
                 className="
                 w-80 h-40 
                 px-3
-                object-cover lg:grayscale group-hover:grayscale-0 rounded-xs"
+                object-contain lg:grayscale group-hover:grayscale-0 rounded-xs"
               />
             </div>
 
