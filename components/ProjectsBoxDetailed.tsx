@@ -75,7 +75,7 @@ export default function ProjectBoxDetailed(
         </div>
 
         {/* text */}
-        <div className="md:w-3/5">
+        <div className="md:w-3/5 xxxl:w-fit">
           <div className="flex flex-col items-start justify-center gap-1 px-1
           ">
             <p className="text-left text-primary 

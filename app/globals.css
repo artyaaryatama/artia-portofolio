@@ -20,8 +20,10 @@
 
   --breakpoint-xs: 24rem;
   --breakpoint-xss: 27rem;
+  --breakpoint-llg: 72rem;
   --breakpoint-xxl: 90rem;
   --breakpoint-xxxl: 100rem;
+  --breakpoint-xxxxl: 160rem;
   
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -148,6 +150,15 @@ body{
   .layout-gap {
     padding-right: 2vw;
     padding-left: 2vw; 
+  }
+}
+
+@media (max-width: 1024px) {
+  .pl-navs{
+    padding-left: clamp(2rem, 2vw, 10rem);
+  }
+  .pr-navs{
+    padding-right: clamp(2rem, 2vw, 10rem);
   }
 }
 
