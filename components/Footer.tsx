@@ -20,7 +20,7 @@ export default function Footer() {
             <span className="block">
               Development Here
               <span className="relative inline-flex size-2 ml-[10px] align-middle
-                mt-1 md:mt-2
+                mt-1 md:mt-2 xl:mt-4
               ">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-75"></span>
                 <span className="relative inline-flex size-2 rounded-full bg-primary"></span>
@@ -32,7 +32,7 @@ export default function Footer() {
         <p className="font-figtree text-sm leading-5
           lg:text-base lg:leading-6 lg:w-170
         ">
-          Currently open to new opportunities. whether in project-based collaboration, contract, or full-time roles. If my work resonates with you,<span className="font-bold"> feel free to reach out!</span>
+          I am open to new opportunities, including freelance projects or full-time roles. If my blend of design and development aligns with your needs,<span className="font-bold"> feel free to reach out!</span>
         </p>
 
         <div className="
@@ -114,7 +114,7 @@ export default function Footer() {
         <div className="flex flex-col gap-2 lg:flex-row lg:justify-between lg:items-end">
           <p className=" text-background
           text-left text-sm lg:text-base lg:leading-6
-          ">@ <span className="block">2025</span></p>
+          ">@ <span className="block">2025 All rights reserved</span></p>
 
           <p className="text-background font-semibold text-2xl
             text-right leading-[28px]
