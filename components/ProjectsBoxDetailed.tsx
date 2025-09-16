@@ -21,7 +21,7 @@ export default function ProjectBoxDetailed(
       <div className="md:flex md:flex-row-reverse md:gap-10">
         
         {/* image */}
-        <div className="md:w-2/5 bg-amber-100 xxxl:w-100">
+        <div className="md:w-2/5 xxxl:w-100">
          <div className="w-full h-50 bg-primary border-6 border-foreground group
           ">
             <div className="custom-border w-full h-full flex items-center justify-center
