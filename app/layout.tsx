@@ -85,7 +85,7 @@ export default function RootLayout({
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Artia Aryatama | Frontend Developer" />
         <meta name="twitter:description" content="A collection of my work as a frontend developer, from landing pages to web applications." />
-        <meta name="twitter:image" content="/meta-icons/og2.png" />
+        <meta name="twitter:image" content="https://artyaaryatama.me/meta-icons/og2.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
