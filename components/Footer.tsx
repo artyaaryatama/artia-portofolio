@@ -32,7 +32,7 @@ export default function Footer() {
         <p className="font-figtree text-sm leading-5
           lg:text-base lg:leading-6 lg:w-170
         ">
-          I&apos;m currently open to new opportunities. whether in project-based collaboration, contract, or full-time roles. If my work resonates with you,<span className="font-bold"> feel free to reach out!</span>
+          I am open to new opportunities, including freelance projects or full-time roles. If my blend of design and development aligns with your needs,<span className="font-bold"> feel free to reach out!</span>
         </p>
 
         <div className="

@@ -12,10 +12,10 @@ This is a personal portfolio website. If you'd like to run it locally for refere
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/your-repo-name
+git clone https://github.com/artyaaryatama/artia-portofolio.git
 
 # Navigate to project directory
-cd your-repo-name
+cd artia-portofolio
 
 # Install dependencies
 npm install
@@ -33,7 +33,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ## 📄 Copyright & Usage
 
 © 2025 Artia Aryatama. All rights reserved.
-
 
 ## 🤝 Connect With Me
 - LinkedIn: [Artia Aryatama](https://linkedin.com/in/artyaaryatama)
