@@ -75,8 +75,9 @@ export default function HomeHero({ startTypewriter }: HomeHeroProps) {
 
         <div className="flex lg:hidden
           flex-col gap-6 items-center
-          xs:mt-20
+          mt-24
         ">
+          <div className="flex layout-gap w-full">
           <Image 
             src={'/person/w-img.jpg'}
             alt="Artia Audrian Aryatama"
@@ -85,12 +86,13 @@ export default function HomeHero({ startTypewriter }: HomeHeroProps) {
             draggable={false}
             loading='lazy'
             className="object-cover 
-            w-full h-[242px]
-            xs:w-40 xs:h-40 
-            sm:w-[60vw] sm:h-60
-            md:w-[65vw] 
+            w-full h-60 
+            sm:h-70
+            md:h-96
             "
           />
+
+          </div>
           <div className="layout-gap ">
             
             <TextGenerateEffect 
