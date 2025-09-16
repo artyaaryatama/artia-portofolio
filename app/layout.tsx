@@ -75,7 +75,7 @@ export default function RootLayout({
         <meta property="og:description" content="A collection of my work as a frontend developer, from landing pages to web applications." />
         <meta property="og:url" content="https://artyaaryatama.me" />
         <meta property="og:site_name" content="Artia Aryatama | Frontend Developer" />
-        <meta property="og:image" content="/meta-icons/og2.png" />
+        <meta property="og:image" content="https://artyaaryatama.me/meta-icons/og2.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Artia Aryatama" />
