@@ -31,8 +31,8 @@ export default function TextGenerateEffect({
   }, [words, startAnimation]);
 
   return (
-    <motion.span className={className}>
+    <motion.h1 className={className}>
       {displayText}
-    </motion.span>
+    </motion.h1>
   );
 };
