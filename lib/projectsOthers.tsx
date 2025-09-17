@@ -7,7 +7,7 @@ export const projectsOthers = [
     description: "I designed and developed this (my) portfolio website using TypeScript and Next.js. This website serves as a space for me to showcase both my professional projects and personal creations.",
     tags: ['NextJS', 'TailwindCSS', 'Marquee'],
     linkRepo: "https://github.com/artyaaryatama/artia-portofolio.git",
-    linkProd: "https://artia-space.vercel.app",
+    linkProd: "",
   },
   {
     src: '/projects/ot-blockchain.webp',

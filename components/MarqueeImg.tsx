@@ -26,7 +26,7 @@ export default function MarqueeImg () {
         <MarqueeFade side="right" />
         <MarqueeContent>
           {images.map((_, index) => (
-            <MarqueeItem className="mx-2 h-46 w-36 lg:w-56 lg:h-66 lg:mx-4" key={index}>
+            <MarqueeItem className="mx-2 h-46 w-36 lg:w-48 lg:h-58 xxl:w-50 xxl:h-60 xxxl:w-56 xxxl:h-66 lg:mx-4" key={index}>
               <Image 
                 src={images[index].src}
                 alt={images[index].alt}
