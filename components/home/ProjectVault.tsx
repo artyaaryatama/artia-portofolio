@@ -21,7 +21,7 @@ export default function ProjectVault(){
       <div className="
         scrollbar-thin scrollbar-thumb-gray-400
         mt-4
-        grid gap-5 grid-cols-1 sm:grid-cols-2 sm:gap-3
+        grid gap-6 grid-cols-1 sm:grid-cols-2 sm:gap-3
         lg:flex lg:pb-5 lg:flex-row lg:overflow-x-auto lg:items-start
       ">
         {
