@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SplashScreen from "@/components/SplashScreen";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -86,27 +87,44 @@ export default function RootLayout({
         <meta name="twitter:title" content="Artia Aryatama | Frontend Developer" />
         <meta name="twitter:description" content="A collection of my work as a frontend developer, from landing pages to web applications." />
         <meta name="twitter:image" content="https://artyaaryatama.me/meta-icons/og2.png" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Person",
-              "name": "Artia Aryatama",
-              "url": "https://artyaaryatama.me",
-              "sameAs": [
-                "https://github.com/artyaaryatama",
-                "https://www.linkedin.com/in/artia-aryatama"
-              ],
-              "jobTitle": "Frontend Developer",
-              "worksFor": {
-                "@type": "Organization",
-                "name": "Freelance"
-              }
+              "@graph": [
+                {
+                  "@type": "WebSite",
+                  "name": "Artia Aryatama",
+                  "url": "https://artyaaryatama.me",
+                  "logo": "https://artyaaryatama.me/meta-icons/android-icon-192x192.png",
+                  "sameAs": [
+                    "https://github.com/artyaaryatama",
+                    "https://www.linkedin.com/in/artia-aryatama"
+                  ]
+                },
+                {
+                  "@type": "Person",
+                  "name": "Artia Aryatama",
+                  "url": "https://artyaaryatama.me",
+                  "image": "https://artyaaryatama.me/meta-icons/android-icon-192x192.png",
+                  "jobTitle": "Frontend Developer",
+                  "worksFor": {
+                    "@type": "Organization",
+                    "name": "Freelance"
+                  },
+                  "sameAs": [
+                    "https://github.com/artyaaryatama",
+                    "https://www.linkedin.com/in/artia-aryatama"
+                  ]
+                }
+              ]
             }),
           }}
         />
       </head>
+
       <body
         className={`${spaceGrotesk.variable} ${figtree.variable} antialiased 
         bg-background
@@ -124,6 +142,7 @@ export default function RootLayout({
           <Navbar />
           <div className="mb-12 block min-lg:flex min-lg:items-center min-lg:flex-col">
             {children}
+            <SpeedInsights />
           </div>
           <Footer />
         </div>
