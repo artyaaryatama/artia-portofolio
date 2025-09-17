@@ -1,6 +1,6 @@
 export const projectsOthers = [
   {
-    src: '/projects/porto-web.webp',
+    src: '/projects/porto-web-v2.webp',
     alt: 'My Portofolio Sites',
     name: '',
     duration: 'August - September 2025',
