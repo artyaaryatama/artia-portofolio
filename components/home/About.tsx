@@ -8,16 +8,16 @@ export default function About(){
       flex flex-col gap-6 items-left
     ">
       <div className="flex items-center gap-4 lg:h-20">
-        <h2 className=" font-space-grotesk
+        <h3 className=" font-space-grotesk
           text-4xl font-bold leading-[38px]
         ">
           About 
-        </h2>
+        </h3>
 
         <div className="bg-primary px-3 py-2 -rotate-4 rounded-sm">
-          <h2 className=" font-space-grotesk
+          <h3 className=" font-space-grotesk
             text-[26px] font-bold leading-[38px] 
-          ">Me</h2>
+          ">Me</h3>
         </div>
       </div>
 
