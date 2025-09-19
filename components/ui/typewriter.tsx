@@ -7,10 +7,12 @@ export default function TextGenerateEffect({
   words,
   className = "",
   startAnimation = true,
+  h1No = true,
 }: {
   words: string;
   className?: string;
   startAnimation?: boolean;
+  h1No?:boolean
 }) {
   const count = useMotionValue(0);
   const rounded = useTransform(count, (latest) => Math.round(latest));
@@ -31,8 +33,14 @@ export default function TextGenerateEffect({
   }, [words, startAnimation]);
 
   return (
-    <motion.h1 className={className}>
-      {displayText}
-    </motion.h1>
+    h1No ? (
+      <motion.h1 className={className}>
+        {displayText}
+      </motion.h1>
+    ) : (
+      <motion.h2 className={className}>
+        {displayText}
+      </motion.h2>
+    )
   );
 };

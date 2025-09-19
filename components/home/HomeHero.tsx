@@ -105,6 +105,7 @@ export default function HomeHero({ startTypewriter }: HomeHeroProps) {
               font-space-grotesk 
               text-4xl font-bold leading-[38px]
               "
+              h1No={false}
             />
 
             <p className="font-figtree 
