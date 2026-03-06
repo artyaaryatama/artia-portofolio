@@ -95,7 +95,7 @@ export default function Footer() {
                 </li>
                 <li className="hover:underline hover:underline-offset-2">
                   <Link
-                    href={'mailto:artyaaryatama21@gmail.com'}
+                    href={'mailto:artiaaryatama@gmail.com'}
                     target="_blank"
                     rel="noopener noreferrer"
                     >
@@ -114,7 +114,7 @@ export default function Footer() {
         <div className="flex flex-col gap-2 lg:flex-row lg:justify-between lg:items-end">
           <p className=" text-background
           text-left text-sm lg:text-base lg:leading-6
-          ">@ <span className="block">2025 All rights reserved</span></p>
+          ">@ <span className="block">2026 All rights reserved</span></p>
 
           <p className="text-background font-semibold text-2xl
             text-right leading-[28px]
