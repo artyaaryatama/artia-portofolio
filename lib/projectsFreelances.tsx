@@ -35,7 +35,7 @@ export const projectsFreelances = [
     name: 'PUPR Sulawesi Selatan',
     duration: 'June - October 2022',
     description: "During this project, I worked closely with the UI/UX team to translate design mockups into clean, functional frontend pages that emphasized accessibility and maintained consistency with the mobile app experience. Alongside other frontend developers, I developed several key pages of the SIMTARU (Sistem Tata Ruang) website, including the homepage, spatial planning, regulations, publications, partners, and registration. The platform serves both as a public information portal and provides a clear call-to-action to download the SIMTARU mobile app.",
-    tags: [ 'HTML', 'CSS', 'Bootsrap'],
+    tags: [ 'PHP', 'HTML', 'CSS', 'Bootsrap'],
     linkRepo: "",
     linkProd: "http://simtaru.sulselprov.go.id",
   }
