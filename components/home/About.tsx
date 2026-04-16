@@ -38,7 +38,7 @@ export default function About(){
           "
         >
           <a
-            href={'/artia-resume.pdf'}
+            href={'/resume-artia-aryatama.pdf'}
             target="_blank" rel="noopener noreferrer"
             className="flex items-center gap-2"
           >
