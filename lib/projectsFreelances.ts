@@ -1,6 +1,7 @@
 export const projectsFreelances = [
   {
-    src: '/projects/damai-web.webp',
+    id: 'damai',
+    src: '/projects/damai.webp',
     alt: 'Build a Mental Health Companion Web',
     name: 'DAMAI',
     duration: 'May - July 2026',
@@ -10,6 +11,7 @@ export const projectsFreelances = [
     linkProd: "https://damai-web.vercel.app",
   },
   {
+    id: 'sma-athirah-bone',
     src: '/projects/sma-athirah.webp',
     alt: 'Build landing page and CMS',
     name: 'SMA Athirah Bone',
@@ -20,6 +22,7 @@ export const projectsFreelances = [
     linkProd: "https://smaathirahbone.sch.id",
   },
   {
+    id: 'cahaya-petshop',
     src: '/projects/cahy-petshop.webp',
     alt: 'Build a Web Dashboard',
     name: 'Cahaya Petshop',
@@ -29,7 +32,8 @@ export const projectsFreelances = [
     linkRepo: "",
     linkProd: "",
   },
-    {
+  {
+    id: 'pln-up3-makassar',
     src: '/projects/sigadis.webp',
     alt: 'Develop SiGadis Web',
     name: 'PLN UP3 Makassar (Internship)',
@@ -40,6 +44,7 @@ export const projectsFreelances = [
     linkProd: "",
   },
   {
+    id: 'pupr-sulawesi-selatan',
     src: '/projects/pupr-simtaru.webp',
     alt: 'Build a landing page for SIMTARU',
     name: 'PUPR Sulawesi Selatan',

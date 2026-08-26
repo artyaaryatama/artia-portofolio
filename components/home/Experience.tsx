@@ -31,6 +31,7 @@ export default function Experience(){
             .map((data, index) => (
               <ProjectBox 
                 key={index}
+                id={data.id}
                 imgSrc={data.src}
                 imgAlt={data.alt}
                 projectName={data.name}

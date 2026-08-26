@@ -1,5 +1,6 @@
 import ExprHero from "@/components/experience/ExprHero"
 import ExprProjects from "@/components/experience/ExprProjects"
+import ScrollToProject from "@/components/experience/ScrollToProject"
 import MarqueeText from "@/components/MarqueeText"
 import { projectsFreelances } from "@/lib/projectsFreelances"
 import { projectsOthers } from "@/lib/projectsOthers"
@@ -10,16 +11,17 @@ export default function Page() {
       flex flex-col 
       gap-12 min-xxxl:w-[70vw] min-lg:w-[74vw] w-full 
     ">
+      <ScrollToProject />
       <ExprHero />
       <ExprProjects 
         projectsData={projectsFreelances}
         projectTitle="Freelance Projects"
       />
-      <MarqueeText 
+      {/* <MarqueeText 
         text="Open to new projects! 🌎"
         styleContainer="bg-muted py-2"
         styleText="text-primary text-2xl font-figtree"
-      />
+      /> */}
       <ExprProjects 
         projectsData={projectsOthers}
         projectTitle="My other Projects..."

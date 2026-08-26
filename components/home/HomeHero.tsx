@@ -41,7 +41,7 @@ export default function HomeHero({ startTypewriter }: HomeHeroProps) {
           </div>
 
           <div className="w-3/5">
-            <h1
+            {/* <h1
               className="
               font-space-grotesk font-bold text-left
               text-[40px] leading-11
@@ -50,10 +50,10 @@ export default function HomeHero({ startTypewriter }: HomeHeroProps) {
               xxxl:text-7xl xxxl:leading-17
               "
             >
-              Hi, I'm Artia Aryatama Frontend Web Developer
-            </h1>
-            {/* <TextGenerateEffect 
-              words=""
+              Hi, I&apos;m Artia Aryatama Frontend Web Developer
+            </h1> */}
+            <TextGenerateEffect 
+              words="Hi, I'm Artia Aryatama Frontend Developer"
               startAnimation={startTypewriter}
               className="
               font-space-grotesk font-bold text-left
@@ -62,13 +62,12 @@ export default function HomeHero({ startTypewriter }: HomeHeroProps) {
               xl:text-[3.2rem] xl:leading-14
               xxxl:text-7xl xxxl:leading-17
               "
-            /> */}
+            />
 
             <p className="font-figtree 
               text-lg leading-6
               mt-6
-              llg:mt-7
-              xxl:mt-10 mb-3
+              llg:mt-3 mb-3
               ">
               From Gowa, Indonesia, I craft purposeful web products that bring ideas to life. Detail-oriented, I refine the small things that shape a smoother overall experience.
             </p>
@@ -110,7 +109,7 @@ export default function HomeHero({ startTypewriter }: HomeHeroProps) {
           <div className="layout-gap ">
             
             <TextGenerateEffect 
-              words="Hi, I'm Artia Audrian Aryatama Frontend Web Developer"
+              words="Hi, I'm Artia Audrian Aryatama Frontend Developer"
               startAnimation={startTypewriter}
               className="
               font-space-grotesk 
@@ -122,7 +121,7 @@ export default function HomeHero({ startTypewriter }: HomeHeroProps) {
             <p className="font-figtree 
               text-sm leading-5 
               mt-5 mb-2">
-              From Makassar, Indonesia, I craft purposeful web products that bring ideas to life. Driven by a passion to keep learning and connect design with purpose.  
+              From Gowa, Indonesia, I craft purposeful web products that bring ideas to life. Driven by a passion to keep learning and connect design with purpose.  
             </p>
 
             <div className=" flex gap-3

@@ -108,13 +108,13 @@ export default function RootLayout({
         bg-background
         `}
       >
-        <Navbar />
+        {/* <Navbar />
           <div className="mb-12 block lg:flex lg:items-center lg:flex-col">
             {children}
             <SpeedInsights />
           </div>
-        <Footer />
-        {/* <SplashGate>{children}</SplashGate> */}
+        <Footer /> */}
+        <SplashGate>{children}</SplashGate>
       </body>
     </html> 
   );

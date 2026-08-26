@@ -1,7 +1,7 @@
-
 import ProjectBoxDetailed from "../ProjectsBoxDetailed"
 
 interface data {
+  id: string,
   src: string,
   alt: string,
   name: string,
@@ -36,6 +36,7 @@ export default function ExprProjects({projectsData, projectTitle}:projects){
             projectsData.map((data, key) => (
               <ProjectBoxDetailed 
                 key={key}
+                id={data.id}
                 imgSrc={data.src}
                 imgAlt={data.alt}
                 projectName={data.name}
@@ -47,10 +48,6 @@ export default function ExprProjects({projectsData, projectTitle}:projects){
               />
             ))}
         </div>
-        
-        
-
-      
       </div>
     </div>
   )

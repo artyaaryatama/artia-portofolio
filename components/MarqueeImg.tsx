@@ -35,7 +35,7 @@ export default function MarqueeImg () {
       <Marquee>
         <MarqueeFade side="left" />
         <MarqueeFade side="right" />
-        <MarqueeContent play={isPageVisible} style={{ willChange: 'transform' }}>
+        <MarqueeContent play={isPageVisible}>
           {images.map((_, index) => (
             <MarqueeItem className="mx-2 h-46 w-36 lg:w-48 lg:h-58 xxl:w-50 xxl:h-60 xxxl:w-56 xxxl:h-66 lg:mx-4" key={index}>
               <Image 
@@ -47,7 +47,7 @@ export default function MarqueeImg () {
                 width={300}
                 height={300}
                 sizes="(min-width: 1536px) 224px, (min-width: 1024px) 192px, 144px"
-                className='w-full h-full object-cover grayscale hover:grayscale-0 focus:grayscale-0 transition-[filter] duration-300 transform-gpu will-change-transform'
+                className='w-full h-full object-cover grayscale hover:grayscale-0 focus:grayscale-0 transition-[filter] duration-300'
               />
             </MarqueeItem>
           ))}

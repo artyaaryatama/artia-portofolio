@@ -19,7 +19,7 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
           initial={{ y: 0 }}
           exit={{ y: "-100%" }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-background/80 backdrop-filter backdrop-blur-xl"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-background"
         >
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
