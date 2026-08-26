@@ -1,9 +1,6 @@
 import { Space_Grotesk, Figtree } from "next/font/google";
 import SplashGate from "@/components/SplashGate";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import Footer from "@/components/Footer";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -108,12 +105,6 @@ export default function RootLayout({
         bg-background
         `}
       >
-        {/* <Navbar />
-          <div className="mb-12 block lg:flex lg:items-center lg:flex-col">
-            {children}
-            <SpeedInsights />
-          </div>
-        <Footer /> */}
         <SplashGate>{children}</SplashGate>
       </body>
     </html> 

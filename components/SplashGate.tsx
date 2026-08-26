@@ -1,10 +1,11 @@
 "use client";
 
-import { useState, useLayoutEffect } from "react";
+import { useState, useLayoutEffect, useCallback } from "react";
 import SplashScreen from "@/components/SplashScreen";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { SplashContext } from "@/components/SplashContext";
 
 export default function SplashGate({ children }: { children: React.ReactNode }) {
   const [showSplash, setShowSplash] = useState(true);
@@ -21,13 +22,13 @@ export default function SplashGate({ children }: { children: React.ReactNode }) 
     }
   }, []);
 
-  const handleSplashComplete = () => {
+  const handleSplashComplete = useCallback(() => {
     setShowSplash(false);
     setIsFirstVisit(false);
-  };
+  }, []);
 
   return (
-    <>
+    <SplashContext.Provider value={!showSplash}>
       {isFirstVisit && showSplash && (
         <SplashScreen onComplete={handleSplashComplete} />
       )}
@@ -44,6 +45,6 @@ export default function SplashGate({ children }: { children: React.ReactNode }) 
         </div>
         <Footer />
       </div>
-    </>
+    </SplashContext.Provider>
   );
 }
