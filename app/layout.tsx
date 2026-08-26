@@ -1,12 +1,9 @@
-"use client";
-
-import { Space_Grotesk, Figtree} from "next/font/google";
-import { useState, useEffect } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import SplashScreen from "@/components/SplashScreen";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Space_Grotesk, Figtree } from "next/font/google";
+import SplashGate from "@/components/SplashGate";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import Footer from "@/components/Footer";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -25,25 +22,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [showSplash, setShowSplash] = useState(true);
-  const [isFirstVisit, setIsFirstVisit] = useState(true);
-
-  useEffect(() => {
-    const hasVisited = sessionStorage.getItem('hasVisited');
-    
-    if (hasVisited) {
-      setShowSplash(false);
-      setIsFirstVisit(false);
-    } else {
-      sessionStorage.setItem('hasVisited', 'true');
-    }
-  }, []);
-
-  const handleSplashComplete = () => {
-    setShowSplash(false);
-    setIsFirstVisit(false);
-  };
-
   return (
     <html lang="en">
       <head>
@@ -130,22 +108,13 @@ export default function RootLayout({
         bg-background
         `}
       >
-        {isFirstVisit && showSplash && (
-          <SplashScreen onComplete={handleSplashComplete} />
-        )}
-        
-        <div style={{ 
-          visibility: showSplash ? 'hidden' : 'visible',
-          opacity: showSplash ? 0 : 1,
-          transition: 'opacity 0.5s ease-in-out',
-        }}>
-          <Navbar />
-          <div className="mb-12 block min-lg:flex min-lg:items-center min-lg:flex-col">
+        <Navbar />
+          <div className="mb-12 block lg:flex lg:items-center lg:flex-col">
             {children}
             <SpeedInsights />
           </div>
-          <Footer />
-        </div>
+        <Footer />
+        {/* <SplashGate>{children}</SplashGate> */}
       </body>
     </html> 
   );

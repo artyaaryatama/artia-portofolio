@@ -36,7 +36,7 @@ export default function ProjectBoxDetailed(
                 className="
                 w-80 h-40 
                 px-3
-                object-contain lg:grayscale group-hover:grayscale-0 rounded-xs"
+                object-contain rounded-xs"
               />
             </div>
 

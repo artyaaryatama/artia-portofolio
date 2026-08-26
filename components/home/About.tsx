@@ -9,21 +9,21 @@ export default function About(){
     ">
       <div className="flex items-center gap-4 lg:h-20">
         <h3 className=" font-space-grotesk
-          text-4xl font-bold leading-[38px]
+          text-4xl font-bold leading-9.5
         ">
-          About 
+          About
         </h3>
 
         <div className="bg-primary px-3 py-2 -rotate-4 rounded-sm">
           <h3 className=" font-space-grotesk
-            text-[26px] font-bold leading-[38px] 
+            text-[26px] font-bold leading-9.5
           ">Me</h3>
         </div>
       </div>
 
       <div>
-        <p className="font-figtree text-left 
-          text-sm leading-5 
+        <p className="font-figtree text-left
+          text-sm leading-5
           lg:text-base lg:leading-6
         ">
           As a frontend developer, I&apos;ve worked with React, Next.js, TailwindCSS, and other modern frameworks to build responsive and user-friendly web applications. My work bridges design and development, focusing on clean, reusable code and smooth user experiences.
@@ -38,11 +38,11 @@ export default function About(){
           "
         >
           <a
-            href={'/artia-resume.pdf'}
+            href={'/resume-artia-aryatama.pdf'}
             target="_blank" rel="noopener noreferrer"
             className="flex items-center gap-2"
           >
-            Resume 
+            Resume
             <MoveRight className="w-4 h-2" />
           </a>
         </Button>

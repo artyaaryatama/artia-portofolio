@@ -1,5 +1,15 @@
 export const projectsFreelances = [
   {
+    src: '/projects/damai-web.webp',
+    alt: 'Build a Mental Health Companion Web',
+    name: 'DAMAI',
+    duration: 'May - July 2026',
+    description: "I built a wellness platform to help high school students manage stress and stay focused, complete with guided audio sessions, music, mini-games, and feedback forms. I also created an admin tool so the research team could manage and update content themselves without needing a developer, plus a live dashboard to track which students were active and what they were doing in real time, helping the team monitor engagement during the research process.",
+    tags: [ 'Next.js', 'shadcn/ui', 'Tailwind CSS','Supabase'],
+    linkRepo: "",
+    linkProd: "https://damai-web.vercel.app",
+  },
+  {
     src: '/projects/sma-athirah.webp',
     alt: 'Build landing page and CMS',
     name: 'SMA Athirah Bone',

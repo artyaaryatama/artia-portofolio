@@ -7,14 +7,13 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(false);
-      onComplete();
     }, 2000);
 
     return () => clearTimeout(timer);
-  }, [onComplete]);
+  }, []);
 
   return (
-    <AnimatePresence>
+    <AnimatePresence onExitComplete={onComplete}>
       {isVisible && (
         <motion.div
           initial={{ y: 0 }}
