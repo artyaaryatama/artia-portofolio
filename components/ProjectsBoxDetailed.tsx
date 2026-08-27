@@ -3,6 +3,7 @@ import BtnSourceCode from "./ui/buttonSourceCode"
 import BtnSites from "./ui/buttonSites"
 
 interface project {
+  id: string,
   imgSrc: string,
   imgAlt: string,
   projectName: string,
@@ -14,11 +15,11 @@ interface project {
 }
 
 export default function ProjectBoxDetailed(
-  {imgSrc, imgAlt, projectName, duration, description, tags, linkRepo, linkProd} : project
+  {id, imgSrc, imgAlt, projectName, duration, description, tags, linkRepo, linkProd} : project
 ){
   return(
-    <div className="font-figtree w-full">
-      <div className="md:flex md:flex-row-reverse md:gap-10">
+    <div id={id} className="font-figtree w-full scroll-mt-28">
+      <div className="md:flex md:flex-row md:gap-10">
         
         {/* image */}
         <div className="md:w-2/5 xxxl:w-100">
@@ -36,7 +37,7 @@ export default function ProjectBoxDetailed(
                 className="
                 w-80 h-40 
                 px-3
-                object-contain lg:grayscale group-hover:grayscale-0 rounded-xs"
+                object-contain rounded-xs"
               />
             </div>
 
@@ -98,7 +99,7 @@ export default function ProjectBoxDetailed(
               </ul>
             </div>
 
-            <p className="text-left text-wrap
+            <p className="text-wrap text-justify
               text-sm leading-5 
               lg:text-base lg:leading-6
               mt-4 md:mt-2

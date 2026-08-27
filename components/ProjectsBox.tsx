@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 interface project {
+  id: string,
   imgSrc: string,
   imgAlt: string,
   projectName: string,
@@ -9,7 +10,7 @@ interface project {
 }
 
 export default function ProjectBox(
-  {imgSrc, imgAlt, projectName, duration} : project
+  {id, imgSrc, imgAlt, projectName, duration} : project
 ){
   return(
     <div className="font-figtree w-full lg:w-85 ">
@@ -17,7 +18,8 @@ export default function ProjectBox(
         imgSrc !== 'none' ? 
         <div>
           <Link 
-            href={'/experience'}
+            href={`/experience#${id}`}
+            scroll={false}
             className=""
           >
             <div className="w-full lg:w-85 h-40 bg-primary border-6 border-foreground  group
@@ -31,7 +33,7 @@ export default function ProjectBox(
                   width={700}
                   height={700}
                   loading='lazy'
-                  className="w-64 px-2 h-30 object-contain lg:grayscale group-hover:grayscale-0 rounded-xs"
+                  className="w-64 px-2 h-30 object-contain rounded-xs"
                 />
               </div>
             </div>
@@ -54,7 +56,8 @@ export default function ProjectBox(
         ">
           <div className="custom-border w-full h-full flex items-center justify-center bg-foreground">
             <Link 
-              href={'/experience'}
+              href={`/experience#${id}`}
+              scroll={false}
               className="underline underline-offset-2 flex items-center gap-2"
             >
               <p className="text-center text-primary">

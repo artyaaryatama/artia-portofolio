@@ -35,7 +35,7 @@ export default function Navbar() {
       className={`
         fixed inset-x-0 top-3 z-50
         font-space-grotesk text-sm lg:text-lg
-        transition-transform duration-500
+        transition-transform duration-500 
       `}
     >
       <ul className="flex justify-between items-center">

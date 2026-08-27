@@ -1,5 +1,17 @@
 export const projectsFreelances = [
   {
+    id: 'damai',
+    src: '/projects/damai.webp',
+    alt: 'Build a Mental Health Companion Web',
+    name: 'DAMAI',
+    duration: 'May - July 2026',
+    description: "I built a wellness platform to help high school students manage stress and stay focused, complete with guided audio sessions, music, mini-games, and feedback forms. I also created an admin tool so the research team could manage and update content themselves without needing a developer, plus a live dashboard to track which students were active and what they were doing in real time, helping the team monitor engagement during the research process.",
+    tags: [ 'Next.js', 'shadcn/ui', 'Tailwind CSS','Supabase'],
+    linkRepo: "",
+    linkProd: "https://damai-web.vercel.app",
+  },
+  {
+    id: 'sma-athirah-bone',
     src: '/projects/sma-athirah.webp',
     alt: 'Build landing page and CMS',
     name: 'SMA Athirah Bone',
@@ -10,6 +22,7 @@ export const projectsFreelances = [
     linkProd: "https://smaathirahbone.sch.id",
   },
   {
+    id: 'cahaya-petshop',
     src: '/projects/cahy-petshop.webp',
     alt: 'Build a Web Dashboard',
     name: 'Cahaya Petshop',
@@ -19,7 +32,8 @@ export const projectsFreelances = [
     linkRepo: "",
     linkProd: "",
   },
-    {
+  {
+    id: 'pln-up3-makassar',
     src: '/projects/sigadis.webp',
     alt: 'Develop SiGadis Web',
     name: 'PLN UP3 Makassar (Internship)',
@@ -30,12 +44,13 @@ export const projectsFreelances = [
     linkProd: "",
   },
   {
+    id: 'pupr-sulawesi-selatan',
     src: '/projects/pupr-simtaru.webp',
     alt: 'Build a landing page for SIMTARU',
     name: 'PUPR Sulawesi Selatan',
     duration: 'June - October 2022',
     description: "During this project, I worked closely with the UI/UX team to translate design mockups into clean, functional frontend pages that emphasized accessibility and maintained consistency with the mobile app experience. Alongside other frontend developers, I developed several key pages of the SIMTARU (Sistem Tata Ruang) website, including the homepage, spatial planning, regulations, publications, partners, and registration. The platform serves both as a public information portal and provides a clear call-to-action to download the SIMTARU mobile app.",
-    tags: [ 'HTML', 'CSS', 'Bootsrap'],
+    tags: [ 'PHP', 'HTML', 'CSS', 'Bootsrap'],
     linkRepo: "",
     linkProd: "http://simtaru.sulselprov.go.id",
   }

@@ -1,5 +1,6 @@
 export const projectsOthers = [
   {
+    id: 'portfolio-v2',
     src: '/projects/porto-web-v2.webp',
     alt: 'My Portofolio Sites',
     name: '',
@@ -10,6 +11,7 @@ export const projectsOthers = [
     linkProd: "",
   },
   {
+    id: 'thesis-undergraduate',
     src: '/projects/ot-blockchain.webp',
     alt: 'dApp for Traditional Medicine Tracking',
     name: 'Thesis Undergraduate Project',
@@ -20,6 +22,7 @@ export const projectsOthers = [
     linkProd: "https://obat-tradisional-blockchain.vercel.app",
   },
   {
+    id: 'ubicom-lab-unhas',
     src: '/projects/ubilab.webp',
     alt: 'Build a CMS',
     name: 'Ubicom Lab UNHAS',

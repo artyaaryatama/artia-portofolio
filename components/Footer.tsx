@@ -7,11 +7,11 @@ export default function Footer() {
       bg-muted pt-10 flex flex-col items-center
     ">
       <div className="layout-gap mb-10
-        flex flex-col gap-6 text-background min-xxxl:w-[70vw] min-lg:w-[74vw] w-full">
+        flex flex-col gap-6 text-background xxxl:w-[70vw] lg:w-[74vw] w-full">
         <div className="flex items-start xl:ml-24">
           <h3 className="
             font-space-grotesk font-bold 
-            leading-[36px] text-3xl xss:text-4xl
+            leading-9 text-3xl xss:text-4xl
             md:text-5xl md:leading-13
             xl:text-6xl xl:leading-15
           "
@@ -19,7 +19,7 @@ export default function Footer() {
             Design Meets
             <span className="block">
               Development Here
-              <span className="relative inline-flex size-2 ml-[10px] align-middle
+              <span className="relative inline-flex size-2 ml-2.5 align-middle
                 mt-1 md:mt-2 xl:mt-4
               ">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-75"></span>
@@ -45,7 +45,7 @@ export default function Footer() {
             flex justify-start gap-4 items-end
             lg:flex-row-reverse
             ">
-            <div className="border-4 border-primary w-[90px] h-[90px]">
+            <div className="border-4 border-primary w-22.5 h-22.5">
               <Image 
                 src= {'/person/zoom.jpg'}
                 alt= "Artia Audrian Aryatama"
@@ -109,15 +109,15 @@ export default function Footer() {
       </div>
 
       <div className="bg-primary font-space-grotesk py-3 layout-gap
-        min-xxxl:w-[70vw] min-lg:w-[74vw] w-full
+        xxxl:w-[70vw] lg:w-[74vw] w-full
       ">
         <div className="flex flex-col gap-2 lg:flex-row lg:justify-between lg:items-end">
           <p className=" text-background
-          text-left text-sm lg:text-base lg:leading-6
-          ">@ <span className="block">2025 All rights reserved</span></p>
+          text-left text-sm lg:text-base lg:leading-6  
+          ">@2026</p>
 
           <p className="text-background font-semibold text-2xl
-            text-right leading-[28px]
+            text-right leading-8
           "
           >
             ARTIA AUDRIAN ARYATAMA

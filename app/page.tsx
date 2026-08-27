@@ -11,17 +11,7 @@ export default function Home() {
   const [startTypewriter, setStartTypewriter] = useState(false);
 
   useEffect(() => {
-    const hasVisited = sessionStorage.getItem('hasVisited');
-    
-    if (hasVisited) {
-      setStartTypewriter(true);
-    } else {
-      const timer = setTimeout(() => {
-        setStartTypewriter(true);
-      }, 1970); 
-
-      return () => clearTimeout(timer);
-    }
+    setStartTypewriter(true);
   }, []);
 
   return (

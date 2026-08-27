@@ -141,6 +141,10 @@ body{
   color: var(--foreground);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .layout-gap{
   padding-right: clamp(2rem, 2vw, 10rem);
   padding-left: clamp(2rem, 2vw, 10rem);
