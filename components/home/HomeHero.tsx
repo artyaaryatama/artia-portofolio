@@ -50,7 +50,7 @@ export default function HomeHero({ startTypewriter }: HomeHeroProps) {
               xxxl:text-7xl xxxl:leading-17
               "
             >
-              Hi, I&apos;m Artia Aryatama Frontend Web Developer
+              Hi, I&apos;m Artia Aryatama Frontend Developer
             </h1>
             {/* <TextGenerateEffect 
               words="Hi, I'm Artia Aryatama Frontend Developer"
@@ -108,7 +108,16 @@ export default function HomeHero({ startTypewriter }: HomeHeroProps) {
           </div>
           <div className="layout-gap ">
             
-            <TextGenerateEffect 
+            <h1
+              className="
+              font-space-grotesk 
+              text-4xl font-bold leading-9.5
+              "
+            >
+              Hi, I&apos;m Artia Aryatama Frontend Developer
+            </h1>
+
+            {/* <TextGenerateEffect 
               words="Hi, I'm Artia Audrian Aryatama Frontend Developer"
               startAnimation={startTypewriter}
               className="
@@ -116,7 +125,7 @@ export default function HomeHero({ startTypewriter }: HomeHeroProps) {
               text-4xl font-bold leading-9.5
               "
               h1No={false}
-            />
+            /> */}
 
             <p className="font-figtree 
               text-sm leading-5 
